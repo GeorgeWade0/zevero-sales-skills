@@ -1,0 +1,160 @@
+{
+  "_comment": "Where every skill comes from. origin=zevero skills are edited here directly; origin=public skills are vendored from GitHub at 'ref' by scripts/vendor.py - change them upstream or bump the ref, don't hand-edit.",
+  "sources": [
+    {
+      "id": "zevero",
+      "origin": "zevero",
+      "title": "Zevero originals",
+      "license": "Proprietary - Zevero internal",
+      "skills": [
+        "cco-exec-answer",
+        "cco-leadership-update",
+        "cco-okr-checkin",
+        "cco-pipeline-review",
+        "cco-weekly-brief",
+        "commercial-pulse",
+        "discovery-brief",
+        "hubspot-contact-enrichment",
+        "hubspot-post-meeting-update",
+        "triage-sales-emails",
+        "uk-brief-for-ben",
+        "value-follow-up-pdf",
+        "weekly-contact-enrichment"
+      ]
+    },
+    {
+      "id": "anthropic-sales",
+      "origin": "public",
+      "title": "Anthropic sales plugin",
+      "repo": "anthropics/knowledge-work-plugins",
+      "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+      "license": "Apache-2.0",
+      "license_file": "sales/LICENSE",
+      "base": "sales/skills",
+      "extra_files": { "sales/CONNECTORS.md": "CONNECTORS.md" },
+      "skills": [
+        "account-context", "account-plan", "account-research", "account-tiering",
+        "call-prep", "call-summary", "close-plan", "competitive-intelligence",
+        "create-an-asset", "crm-hygiene-check", "customer-health", "customer-voice",
+        "daily-briefing", "deal-advance-gap", "deal-review", "deal-signals",
+        "deal-slip-scenario", "draft-outreach", "end-of-day", "expansion-whitespace",
+        "forecast", "handle-objection", "inbox-sweep", "lead-triage",
+        "log-activity", "pipeline-review", "renewal-radar", "rep-context",
+        "route-lead", "schedule-meeting", "setup", "stakeholder-map",
+        "team-pipeline", "update-opportunity", "weekly-wrap", "win-loss-review"
+      ]
+    },
+    {
+      "id": "hard-half",
+      "origin": "public",
+      "title": "The Hard Half (sales, accounts and deal skills)",
+      "repo": "mmoranodevelop/hard-half",
+      "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "extra_files": { ".agents/invocation.md": "_shared/invocation.md" },
+      "rewrites": [
+        { "from": "(?:\\.\\./)+\\.agents/invocation\\.md", "to": "../_shared/invocation.md" },
+        { "from": "\\.\\./\\.\\./[a-z-]+/([a-z0-9-]+)/", "to": "../\\1/" }
+      ],
+      "skills": [
+        "accounts/account-handoff", "accounts/account-health", "accounts/book-of-business",
+        "accounts/churn-save", "accounts/client-escalation", "accounts/mutual-action-plan",
+        "accounts/renewal-risk", "accounts/value-realization",
+        "commercial/bid-no-bid", "commercial/deal-desk", "commercial/forecast-call", "commercial/reference-ask",
+        "comms/champion-coach", "comms/close-ask", "comms/demo-narrative", "comms/discovery-call",
+        "comms/economic-buyer", "comms/follow-up-48h", "comms/hostile-room", "comms/intro-ask",
+        "comms/negotiation-trades", "comms/objection-map", "comms/pre-read", "comms/proof-story",
+        "comms/proposal-narrative", "comms/stakeholder-message-map",
+        "documents/battle-card", "documents/sales-datasheet", "documents/sales-proposal",
+        "documents/solution-brief", "documents/trust-pack", "documents/value-eng",
+        "strategy/business-case", "strategy/competitive-teardown", "strategy/discount-exception",
+        "strategy/pricing-one-pager", "strategy/win-loss",
+        "management/qbr", "writing/pyramid-principle"
+      ]
+    },
+    {
+      "id": "apollo",
+      "origin": "public",
+      "title": "Apollo.io plugin (needs the Apollo connector)",
+      "repo": "apolloio/apollo-mcp-plugin",
+      "ref": "bd0513c961f02105492fcff0d7d29c9cccf1ed23",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "skills": ["enrich-lead", "prospect", "sequence-load", "gtm-strategist"]
+    },
+    {
+      "id": "marketingskills",
+      "origin": "public",
+      "title": "Sales-side skills from marketingskills (Corey Haines, Zevero fork)",
+      "repo": "GeorgeWade0/marketingskills",
+      "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "skills": ["cold-email", "prospecting", "sales-enablement", "revops", "pricing", "competitors", "competitor-profiling"]
+    },
+    {
+      "id": "mbfinotti",
+      "origin": "public",
+      "title": "mbfinotti/sales-skills (evidence-graded deal skills)",
+      "repo": "mbfinotti/sales-skills",
+      "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "rewrites": [{ "from": "mbfinotti/sales-skills@", "to": "" }],
+      "skills": [
+        "meddpicc-scorecard", "sales-call-review", "deal-red-flags", "deal-value-calc",
+        "negotiation-concession-planner", "deal-champion-mapping",
+        "sales-pipeline-coverage-modeling", "sales-discovery-questions"
+      ]
+    },
+    {
+      "id": "rfp",
+      "origin": "public",
+      "title": "RFP responder (alirezarezvani/claude-skills)",
+      "repo": "alirezarezvani/claude-skills",
+      "ref": "8f082544116fc0d014188e521ca40304cdfc86b0",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "commercial/skills",
+      "skills": ["rfp-responder"]
+    },
+    {
+      "id": "awesome-copilot",
+      "origin": "public",
+      "title": "Enterprise account planning (github/awesome-copilot)",
+      "repo": "github/awesome-copilot",
+      "ref": "96543145e9cb97711020b57b9d88f968062c4fc7",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "skills": ["gtm-enterprise-account-planning"]
+    },
+    {
+      "id": "craig-hewitt",
+      "origin": "public",
+      "title": "LinkedIn outreach (TheCraigHewitt/sales-skills)",
+      "repo": "TheCraigHewitt/sales-skills",
+      "ref": "75cdb8c856876986a937d4bc2c9697ea13643b8c",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "skills": ["linkedin-outreach"]
+    },
+    {
+      "id": "lmty",
+      "origin": "public",
+      "title": "Competitive POC / RFP plan (LMTYdotcom/skills)",
+      "repo": "LMTYdotcom/skills",
+      "ref": "18667e0c2f3e4872c17eb827d4e44983049b6829",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "base": "skills",
+      "skills": ["competitive-poc-rfp-plan"]
+    }
+  ]
+}

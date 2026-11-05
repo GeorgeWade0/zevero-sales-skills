@@ -1,0 +1,23 @@
+name: validate
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate skills and check generated files
+        run: python3 scripts/build.py --check
+      - name: Require a CHANGELOG entry when skills change
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch -q origin "${{ github.base_ref }}"
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)
+          if echo "$changed" | grep -q '^skills/' && ! echo "$changed" | grep -q '^CHANGELOG.md$'; then
+            echo "::error::Skills changed but CHANGELOG.md didn't. Add a line under Unreleased."; exit 1
+          fi

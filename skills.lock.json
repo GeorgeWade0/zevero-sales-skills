@@ -1,0 +1,786 @@
+{
+  "anthropic-sales/account-context": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/account-context",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "8c3dbe96f0f22c08"
+  },
+  "anthropic-sales/account-plan": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/account-plan",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "13d239ff3832eaf8"
+  },
+  "anthropic-sales/account-research": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/account-research",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "f54bcd9576c2063f"
+  },
+  "anthropic-sales/account-tiering": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/account-tiering",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "e9e26325790f2022"
+  },
+  "anthropic-sales/call-prep": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/call-prep",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "09c23e4a6c27d832"
+  },
+  "anthropic-sales/call-summary": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/call-summary",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "b7926b6543d15330"
+  },
+  "anthropic-sales/close-plan": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/close-plan",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "d56fbd4c9aa23efc"
+  },
+  "anthropic-sales/competitive-intelligence": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/competitive-intelligence",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "0077875368789188"
+  },
+  "anthropic-sales/create-an-asset": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/create-an-asset",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "2191ee4e3207b210"
+  },
+  "anthropic-sales/crm-hygiene-check": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/crm-hygiene-check",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "71d3188feba4860d"
+  },
+  "anthropic-sales/customer-health": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/customer-health",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "1e7b6e3ed183de94"
+  },
+  "anthropic-sales/customer-voice": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/customer-voice",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "e892b27812b38bb8"
+  },
+  "anthropic-sales/daily-briefing": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/daily-briefing",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "bfd174edb61cd9ef"
+  },
+  "anthropic-sales/deal-advance-gap": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/deal-advance-gap",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "6d147ac8f6e4f1e6"
+  },
+  "anthropic-sales/deal-review": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/deal-review",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "ce8d5f7e01504d7d"
+  },
+  "anthropic-sales/deal-signals": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/deal-signals",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "6b25ccb9bb062941"
+  },
+  "anthropic-sales/deal-slip-scenario": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/deal-slip-scenario",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "7c8b9fb7dad2137b"
+  },
+  "anthropic-sales/draft-outreach": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/draft-outreach",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "4e6b578f1de05562"
+  },
+  "anthropic-sales/end-of-day": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/end-of-day",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "82304d178b6208da"
+  },
+  "anthropic-sales/expansion-whitespace": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/expansion-whitespace",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "dc105a7722079737"
+  },
+  "anthropic-sales/forecast": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/forecast",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "6e362165404e616c"
+  },
+  "anthropic-sales/handle-objection": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/handle-objection",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "04f27a2df06a2b50"
+  },
+  "anthropic-sales/inbox-sweep": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/inbox-sweep",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "abbaa6402e559c9f"
+  },
+  "anthropic-sales/lead-triage": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/lead-triage",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "e63e2713bf08cdc7"
+  },
+  "anthropic-sales/log-activity": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/log-activity",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "eadea4bf3db67810"
+  },
+  "anthropic-sales/pipeline-review": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/pipeline-review",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "f0646a45aa809145"
+  },
+  "anthropic-sales/renewal-radar": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/renewal-radar",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "34070d4082e2da71"
+  },
+  "anthropic-sales/rep-context": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/rep-context",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "1539003fdeed62ec"
+  },
+  "anthropic-sales/route-lead": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/route-lead",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "fdd15b4c8f14a5b9"
+  },
+  "anthropic-sales/schedule-meeting": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/schedule-meeting",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "6fa8bbbe718bc9ce"
+  },
+  "anthropic-sales/setup": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/setup",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "288b9f773889cbd6"
+  },
+  "anthropic-sales/stakeholder-map": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/stakeholder-map",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "8225e20edf36edeb"
+  },
+  "anthropic-sales/team-pipeline": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/team-pipeline",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "1750582b4dceca3c"
+  },
+  "anthropic-sales/update-opportunity": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/update-opportunity",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "d03d0513a5ae0652"
+  },
+  "anthropic-sales/weekly-wrap": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/weekly-wrap",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "88fb9303d1759b8a"
+  },
+  "anthropic-sales/win-loss-review": {
+    "source": "anthropic-sales",
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/win-loss-review",
+    "ref": "d900840716eb262e1feb17c6f4406c9ce0e06bcf",
+    "license": "Apache-2.0",
+    "hash": "c4c088e609422b89"
+  },
+  "apollo/enrich-lead": {
+    "source": "apollo",
+    "repo": "apolloio/apollo-mcp-plugin",
+    "path": "skills/enrich-lead",
+    "ref": "bd0513c961f02105492fcff0d7d29c9cccf1ed23",
+    "license": "MIT",
+    "hash": "3f0b3d1009413cf9"
+  },
+  "apollo/gtm-strategist": {
+    "source": "apollo",
+    "repo": "apolloio/apollo-mcp-plugin",
+    "path": "skills/gtm-strategist",
+    "ref": "bd0513c961f02105492fcff0d7d29c9cccf1ed23",
+    "license": "MIT",
+    "hash": "04e822f3045a794f"
+  },
+  "apollo/prospect": {
+    "source": "apollo",
+    "repo": "apolloio/apollo-mcp-plugin",
+    "path": "skills/prospect",
+    "ref": "bd0513c961f02105492fcff0d7d29c9cccf1ed23",
+    "license": "MIT",
+    "hash": "f5075ae2b78b394a"
+  },
+  "apollo/sequence-load": {
+    "source": "apollo",
+    "repo": "apolloio/apollo-mcp-plugin",
+    "path": "skills/sequence-load",
+    "ref": "bd0513c961f02105492fcff0d7d29c9cccf1ed23",
+    "license": "MIT",
+    "hash": "74219aee0f2a5b3d"
+  },
+  "awesome-copilot/gtm-enterprise-account-planning": {
+    "source": "awesome-copilot",
+    "repo": "github/awesome-copilot",
+    "path": "skills/gtm-enterprise-account-planning",
+    "ref": "96543145e9cb97711020b57b9d88f968062c4fc7",
+    "license": "MIT",
+    "hash": "06e4c111361ddaf8"
+  },
+  "craig-hewitt/linkedin-outreach": {
+    "source": "craig-hewitt",
+    "repo": "TheCraigHewitt/sales-skills",
+    "path": "skills/linkedin-outreach",
+    "ref": "75cdb8c856876986a937d4bc2c9697ea13643b8c",
+    "license": "MIT",
+    "hash": "7642867db071e1e5"
+  },
+  "hard-half/account-handoff": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/account-handoff",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "e093e7381765a71e"
+  },
+  "hard-half/account-health": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/account-health",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "3acea21540a3b976"
+  },
+  "hard-half/battle-card": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/documents/battle-card",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "6e8f4728339200de"
+  },
+  "hard-half/bid-no-bid": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/commercial/bid-no-bid",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "656089fbe0d0c4d7"
+  },
+  "hard-half/book-of-business": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/book-of-business",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "216e64d9c4b8e508"
+  },
+  "hard-half/business-case": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/strategy/business-case",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "0e6deb747ac5aded"
+  },
+  "hard-half/champion-coach": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/champion-coach",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "582c7f64ad303b90"
+  },
+  "hard-half/churn-save": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/churn-save",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "c7b4317481fe8ad5"
+  },
+  "hard-half/client-escalation": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/client-escalation",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "162194aa04b39a2b"
+  },
+  "hard-half/close-ask": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/close-ask",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "eb33f17a2db3995b"
+  },
+  "hard-half/competitive-teardown": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/strategy/competitive-teardown",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "3350f0e935fa59f5"
+  },
+  "hard-half/deal-desk": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/commercial/deal-desk",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "eabb8a1aa43541f1"
+  },
+  "hard-half/demo-narrative": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/demo-narrative",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "15f5fbb76926a15c"
+  },
+  "hard-half/discount-exception": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/strategy/discount-exception",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "ce0ab2185c2e0917"
+  },
+  "hard-half/discovery-call": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/discovery-call",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "2cf443968ad6b3f3"
+  },
+  "hard-half/economic-buyer": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/economic-buyer",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "7153b63bf2faca50"
+  },
+  "hard-half/follow-up-48h": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/follow-up-48h",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "cdd36ab9395d38c5"
+  },
+  "hard-half/forecast-call": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/commercial/forecast-call",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "5e229cda8902730d"
+  },
+  "hard-half/hostile-room": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/hostile-room",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "cc4c177ded5b1d7a"
+  },
+  "hard-half/intro-ask": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/intro-ask",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "0db89544869c6773"
+  },
+  "hard-half/mutual-action-plan": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/mutual-action-plan",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "c1a10faa929fff4b"
+  },
+  "hard-half/negotiation-trades": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/negotiation-trades",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "889ca4995c4240c4"
+  },
+  "hard-half/objection-map": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/objection-map",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "31a1f5902e78bedb"
+  },
+  "hard-half/pre-read": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/pre-read",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "0d7d43632df24568"
+  },
+  "hard-half/pricing-one-pager": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/strategy/pricing-one-pager",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "db214792cfa52a2f"
+  },
+  "hard-half/proof-story": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/proof-story",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "e295404ce579ab02"
+  },
+  "hard-half/proposal-narrative": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/proposal-narrative",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "9fa800b83679b69a"
+  },
+  "hard-half/pyramid-principle": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/writing/pyramid-principle",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "4f543af3015c3f50"
+  },
+  "hard-half/qbr": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/management/qbr",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "2edb83a69bdc7ba8"
+  },
+  "hard-half/reference-ask": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/commercial/reference-ask",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "12ab9b3166f12bd4"
+  },
+  "hard-half/renewal-risk": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/renewal-risk",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "5fbfd7b84cc85881"
+  },
+  "hard-half/sales-datasheet": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/documents/sales-datasheet",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "7d36738ba8a605f2"
+  },
+  "hard-half/sales-proposal": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/documents/sales-proposal",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "7996102428dba366"
+  },
+  "hard-half/solution-brief": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/documents/solution-brief",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "4b0a0ff54432b839"
+  },
+  "hard-half/stakeholder-message-map": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/comms/stakeholder-message-map",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "b7a439b606945d74"
+  },
+  "hard-half/trust-pack": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/documents/trust-pack",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "2ee520a2b4b1b30d"
+  },
+  "hard-half/value-eng": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/documents/value-eng",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "192507726a852cfb"
+  },
+  "hard-half/value-realization": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/accounts/value-realization",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "2b062fcb64cf9ae8"
+  },
+  "hard-half/win-loss": {
+    "source": "hard-half",
+    "repo": "mmoranodevelop/hard-half",
+    "path": "skills/strategy/win-loss",
+    "ref": "1228fe2048d2709f7406dd231bdb2cdb8ba6d81a",
+    "license": "MIT",
+    "hash": "42abe70eba47b347"
+  },
+  "lmty/competitive-poc-rfp-plan": {
+    "source": "lmty",
+    "repo": "LMTYdotcom/skills",
+    "path": "skills/competitive-poc-rfp-plan",
+    "ref": "18667e0c2f3e4872c17eb827d4e44983049b6829",
+    "license": "MIT",
+    "hash": "70a58180ebd538f3"
+  },
+  "marketingskills/cold-email": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/cold-email",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "63c45bd3935061cf"
+  },
+  "marketingskills/competitor-profiling": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/competitor-profiling",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "b0bb579e2a27cd45"
+  },
+  "marketingskills/competitors": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/competitors",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "784666446d1854f8"
+  },
+  "marketingskills/pricing": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/pricing",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "4ab47e9d87af40b7"
+  },
+  "marketingskills/prospecting": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/prospecting",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "81c5273fc1101292"
+  },
+  "marketingskills/revops": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/revops",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "d726011fdd8618c5"
+  },
+  "marketingskills/sales-enablement": {
+    "source": "marketingskills",
+    "repo": "GeorgeWade0/marketingskills",
+    "path": "skills/sales-enablement",
+    "ref": "c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467",
+    "license": "MIT",
+    "hash": "8535e893435bbc74"
+  },
+  "mbfinotti/deal-champion-mapping": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/deal-champion-mapping",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "c3109f593a77fb22"
+  },
+  "mbfinotti/deal-red-flags": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/deal-red-flags",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "38389fae686bbec5"
+  },
+  "mbfinotti/deal-value-calc": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/deal-value-calc",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "39a1cca71da19c26"
+  },
+  "mbfinotti/meddpicc-scorecard": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/meddpicc-scorecard",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "08cf4878157d8a5d"
+  },
+  "mbfinotti/negotiation-concession-planner": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/negotiation-concession-planner",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "d3d90ea754e2eb96"
+  },
+  "mbfinotti/sales-call-review": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/sales-call-review",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "7c287bffefd9c02b"
+  },
+  "mbfinotti/sales-discovery-questions": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/sales-discovery-questions",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "0a012ed32c306730"
+  },
+  "mbfinotti/sales-pipeline-coverage-modeling": {
+    "source": "mbfinotti",
+    "repo": "mbfinotti/sales-skills",
+    "path": "skills/sales-pipeline-coverage-modeling",
+    "ref": "b2ed3628695e523919af440eab77648e16c5eea8",
+    "license": "MIT",
+    "hash": "3ee9a1629077cb6b"
+  },
+  "rfp/rfp-responder": {
+    "source": "rfp",
+    "repo": "alirezarezvani/claude-skills",
+    "path": "commercial/skills/rfp-responder",
+    "ref": "8f082544116fc0d014188e521ca40304cdfc86b0",
+    "license": "MIT",
+    "hash": "8a047c2613ecceb2"
+  }
+}
