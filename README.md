@@ -16,7 +16,19 @@ Every sales skill the Zevero commercial team uses, in one Claude plugin: our own
 
 ## Install
 
-**Claude Code** (needs read access to this private repo):
+You need an invite to this private repo first. Ask George, and accept the email from GitHub.
+
+**One-time setup:** install Claude Code and the GitHub CLI, then log in to GitHub:
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+```bash
+brew install gh && gh auth login --web --git-protocol https && gh auth setup-git
+```
+
+**Install the plugin** (open a new terminal tab first):
 
 ```bash
 claude plugin marketplace add GeorgeWade0/zevero-sales-skills
@@ -26,7 +38,14 @@ claude plugin marketplace add GeorgeWade0/zevero-sales-skills
 claude plugin install zevero-sales@zevero-sales
 ```
 
-Skills then show up as `zevero-sales:<skill>`, e.g. `/zevero-sales:discovery-brief`.
+Skills then show up as `zevero-sales:<skill>`, e.g. `/zevero-sales:discovery-brief`. Run `claude plugin update zevero-sales` to get new skills when they're released.
+
+## Request or improve a skill
+
+- **Easiest:** ask Claude "request a skill for …" or "the discovery-brief skill got this wrong". The `request-skill` skill drafts the request, shows it to you and files it here.
+- **On GitHub:** go to [Issues → New issue](https://github.com/GeorgeWade0/zevero-sales-skills/issues/new/choose) and pick **Request a new skill**, **Improve an existing skill** or **Something's broken**.
+
+Requests are reviewed weekly. You'll get a GitHub notification when yours is `approved` and again when it ships.
 
 **Claude desktop / Cowork:** an org admin uploads the plugin once (Settings → Plugins → add from GitHub), and it's available to the whole team.
 

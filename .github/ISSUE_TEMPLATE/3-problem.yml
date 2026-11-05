@@ -1,0 +1,19 @@
+name: Something's broken
+description: Install, update, or a skill erroring or not showing up.
+title: "[Problem] "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the command you ran or what you typed, and any error message.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where?
+      options: ["Claude Code (terminal)", "Claude desktop app", "Cowork"]
+    validations:
+      required: true

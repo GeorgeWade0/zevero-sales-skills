@@ -4,6 +4,9 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## Unreleased
 
+- [request-skill] New: ask Claude to request or improve a skill and it files a GitHub issue for you (@GeorgeWade0)
+- Skill request, improvement and problem forms on GitHub Issues (@GeorgeWade0)
+
 ## 0.1.0 (2026-11-05)
 
 - Initial library: 104 skills.

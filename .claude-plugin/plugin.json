@@ -109,6 +109,7 @@
     "./skills/zevero/discovery-brief",
     "./skills/zevero/hubspot-contact-enrichment",
     "./skills/zevero/hubspot-post-meeting-update",
+    "./skills/zevero/request-skill",
     "./skills/zevero/value-follow-up-pdf",
     "./skills/zevero/weekly-contact-enrichment"
   ]

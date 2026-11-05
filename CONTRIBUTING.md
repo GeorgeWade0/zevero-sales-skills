@@ -2,6 +2,16 @@
 
 Every change goes through a pull request, never straight to `main`. All the scripts are standard-library Python 3.9+ and git.
 
+## Triage requests (weekly)
+
+Go through issues labelled `triage`:
+
+1. **Already covered?** Reply with the skill name and close.
+2. **Worth building?** Swap `triage` for `approved` and assign an owner. If a public skill fits, vendor it (see below) instead of writing one.
+3. **Not going ahead?** Label `wontfix`, say why, and close.
+
+Link the PR that ships it with `Closes #<issue>`, so the requester is notified when it merges.
+
 ## Edit a Zevero skill
 
 1. Branch, then edit `skills/zevero/<skill>/SKILL.md` and any files in its `references/` folder.
