@@ -4,6 +4,16 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## Unreleased
 
+## 0.2.0 (2026-11-05)
+
+- Role kits: install `zevero-sales-sdr`, `-ae`, `-am` or `-leader` instead of everything (@GeorgeWade0)
+- [zevero-sales-context] New: Zevero ICP, buying committee, competitors and landmine questions, approved proof, regulations, pricing rules and MEDDPICC, loaded automatically for every sales task (@GeorgeWade0)
+- [ai-tells] Now runs automatically on every customer-facing draft (@GeorgeWade0)
+- [zevero-brand] [zevero-presentation] [en-ja-translator] Added, so PDFs and decks come out on-brand and Japanese uses approved terms (@GeorgeWade0)
+- [buyer-roleplay] New: practise discovery, objections and Japan meetings against realistic Zevero buyers, with scored debriefs and certification (@GeorgeWade0)
+- [rep-ramp] New: 8-week ramp path and certification tracking for new reps (@GeorgeWade0)
+- [skill-feedback] New: reply 👍 or "improve" after any skill output (@GeorgeWade0)
+- Usage logging (skill, rep, time; opt-out available), guardrail evals, release notes to Slack (@GeorgeWade0)
 - [request-skill] New: ask Claude to request or improve a skill and it files a GitHub issue for you (@GeorgeWade0)
 - Skill request, improvement and problem forms on GitHub Issues (@GeorgeWade0)
 

@@ -1,0 +1,64 @@
+{
+  "_comment": "Role starter kits. Each kit is its own plugin in the marketplace. 'core' skills go into every kit. The 'all' kit (zevero-sales) contains every skill. Skill names, not paths. scripts/build.py generates the marketplace from this file.",
+  "core": [
+    "zevero-sales-context",
+    "ai-tells",
+    "zevero-brand",
+    "zevero-presentation",
+    "en-ja-translator",
+    "request-skill",
+    "skill-feedback"
+  ],
+  "kits": [
+    {
+      "name": "zevero-sales-sdr",
+      "displayName": "Zevero Sales - SDR kit",
+      "description": "For SDRs and BDRs: find and research the right accounts, enrich contacts, write outbound that gets replies, and hand off a well-prepared first meeting.",
+      "skills": [
+        "account-research", "lead-triage", "prospect", "enrich-lead", "sequence-load",
+        "cold-email", "linkedin-outreach", "draft-outreach", "intro-ask",
+        "discovery-brief", "hubspot-contact-enrichment", "call-prep", "buyer-roleplay"
+      ]
+    },
+    {
+      "name": "zevero-sales-ae",
+      "displayName": "Zevero Sales - AE kit",
+      "description": "For account executives, discovery to signature: prep and qualify (MEDDPICC), demo, handle objections, build the value case and proposal, negotiate and close.",
+      "skills": [
+        "daily-briefing", "discovery-brief", "call-prep", "sales-discovery-questions", "call-summary",
+        "hubspot-post-meeting-update", "follow-up-48h", "meddpicc-scorecard", "deal-review",
+        "deal-advance-gap", "stakeholder-map", "champion-coach", "economic-buyer", "demo-narrative",
+        "handle-objection", "battle-card", "deal-value-calc", "value-follow-up-pdf", "sales-proposal",
+        "close-plan", "mutual-action-plan", "negotiation-concession-planner", "rfp-responder",
+        "trust-pack", "buyer-roleplay"
+      ]
+    },
+    {
+      "name": "zevero-sales-am",
+      "displayName": "Zevero Sales - Account Manager kit",
+      "description": "For account managers and customer success: account context and plans, health checks and QBRs, renewals, churn saves, expansion and references.",
+      "skills": [
+        "account-context", "account-plan", "account-health", "customer-health", "qbr",
+        "renewal-radar", "renewal-risk", "churn-save", "expansion-whitespace", "value-realization",
+        "reference-ask", "proof-story", "account-handoff", "client-escalation", "call-summary",
+        "hubspot-post-meeting-update", "follow-up-48h", "value-follow-up-pdf"
+      ]
+    },
+    {
+      "name": "zevero-sales-leader",
+      "displayName": "Zevero Sales - Leader kit",
+      "description": "For sales leaders and RevOps: pipeline and forecast reviews, deal inspection, call coaching, win/loss, coverage maths, CRM hygiene and rep ramp.",
+      "skills": [
+        "commercial-pulse", "pipeline-review", "team-pipeline", "forecast", "forecast-call",
+        "rep-context", "deal-red-flags", "sales-call-review", "win-loss-review",
+        "sales-pipeline-coverage-modeling", "deal-slip-scenario", "deal-desk", "discount-exception",
+        "crm-hygiene-check", "weekly-contact-enrichment", "rep-ramp"
+      ]
+    }
+  ],
+  "all": {
+    "name": "zevero-sales",
+    "displayName": "Zevero Sales - everything",
+    "description": "Every Zevero sales skill: our own playbooks plus vetted public skills for prospecting, discovery, deal reviews, proposals, negotiation and account management. Most people should install their role kit instead."
+  }
+}
