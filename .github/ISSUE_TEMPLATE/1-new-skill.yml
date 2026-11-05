@@ -1,0 +1,59 @@
+name: Request a new skill
+description: Ask for a skill that would save you time or help you win deals.
+title: "[Skill request] "
+labels: ["skill-request", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the job you want done, not how it should work. One request per issue. Check the [catalog](https://github.com/GeorgeWade0/zevero-sales-skills/blob/main/CATALOG.md) first.
+  - type: input
+    id: job
+    attributes:
+      label: What do you want Claude to do?
+      description: One sentence, starting with a verb.
+      placeholder: "Build a battlecard for a named competitor we meet in UK deals"
+    validations:
+      required: true
+  - type: textarea
+    id: when
+    attributes:
+      label: When would you use it?
+      description: The moment in your week or the deal stage. What would you type to Claude?
+      placeholder: "Before a demo when the prospect says they're also looking at X. I'd type: 'battlecard for X'"
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do this today, and how long does it take?
+    validations:
+      required: true
+  - type: textarea
+    id: good
+    attributes:
+      label: What does a great result look like?
+      description: Paste or link an example you've written before if you have one. Remove customer-confidential details.
+  - type: checkboxes
+    id: sources
+    attributes:
+      label: What should it use?
+      options:
+        - label: HubSpot
+        - label: Gmail / Google Calendar
+        - label: Granola call transcripts
+        - label: Apollo
+        - label: Slack
+        - label: Zevero docs or decks
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often would you use it?
+      options: ["Daily", "Weekly", "Every deal", "Occasionally"]
+    validations:
+      required: true
+  - type: input
+    id: public
+    attributes:
+      label: Seen a public skill that already does this?
+      description: Link it if so. We can vendor it instead of writing one.

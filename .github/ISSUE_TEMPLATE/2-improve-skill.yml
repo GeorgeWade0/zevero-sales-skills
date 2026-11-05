@@ -1,0 +1,23 @@
+name: Improve an existing skill
+description: A skill gave a weak, wrong or off-brand answer, or is missing something.
+title: "[Improve] "
+labels: ["skill-improvement", "triage"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill?
+      placeholder: "discovery-brief"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What went wrong or what's missing?
+      description: What you asked, what you got, and what you expected. Remove customer-confidential details.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix (optional)

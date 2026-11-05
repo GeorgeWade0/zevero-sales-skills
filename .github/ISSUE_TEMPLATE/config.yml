@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse the skill catalog
+    url: https://github.com/GeorgeWade0/zevero-sales-skills/blob/main/CATALOG.md
+    about: Check whether a skill already does what you need before requesting one.
