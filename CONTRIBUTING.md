@@ -55,4 +55,10 @@ CI fails if a file under a public group no longer matches `skills.lock.json`. If
 
 ## Releasing
 
-When enough has merged, bump `VERSION`, move the **Unreleased** CHANGELOG entries under the new version, run `python3 scripts/build.py`, and merge. Reps pick up the update with `claude plugin update zevero-sales`.
+When enough has merged:
+
+1. Bump `VERSION` and move the **Unreleased** CHANGELOG entries under the new version.
+2. Run `python3 scripts/build.py`, then merge. This creates the GitHub release and posts to Slack.
+3. Publish to the Claude org library, which is where reps install from:
+   - Run `python3 scripts/package.py --out ~/zevero-kits`. Package outside the repo, because `dist/` is gitignored and gitignored files aren't uploaded.
+   - In Claude, ask to "publish ~/zevero-kits/<kit> to the org library" for each changed kit. Replace the existing version when asked.
