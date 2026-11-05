@@ -105,17 +105,10 @@
     "./skills/mbfinotti/sales-discovery-questions",
     "./skills/mbfinotti/sales-pipeline-coverage-modeling",
     "./skills/rfp/rfp-responder",
-    "./skills/zevero/cco-exec-answer",
-    "./skills/zevero/cco-leadership-update",
-    "./skills/zevero/cco-okr-checkin",
-    "./skills/zevero/cco-pipeline-review",
-    "./skills/zevero/cco-weekly-brief",
     "./skills/zevero/commercial-pulse",
     "./skills/zevero/discovery-brief",
     "./skills/zevero/hubspot-contact-enrichment",
     "./skills/zevero/hubspot-post-meeting-update",
-    "./skills/zevero/triage-sales-emails",
-    "./skills/zevero/uk-brief-for-ben",
     "./skills/zevero/value-follow-up-pdf",
     "./skills/zevero/weekly-contact-enrichment"
   ]

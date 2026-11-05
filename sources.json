@@ -7,17 +7,10 @@
       "title": "Zevero originals",
       "license": "Proprietary - Zevero internal",
       "skills": [
-        "cco-exec-answer",
-        "cco-leadership-update",
-        "cco-okr-checkin",
-        "cco-pipeline-review",
-        "cco-weekly-brief",
         "commercial-pulse",
         "discovery-brief",
         "hubspot-contact-enrichment",
         "hubspot-post-meeting-update",
-        "triage-sales-emails",
-        "uk-brief-for-ben",
         "value-follow-up-pdf",
         "weekly-contact-enrichment"
       ]
@@ -31,17 +24,46 @@
       "license": "Apache-2.0",
       "license_file": "sales/LICENSE",
       "base": "sales/skills",
-      "extra_files": { "sales/CONNECTORS.md": "CONNECTORS.md" },
+      "extra_files": {
+        "sales/CONNECTORS.md": "CONNECTORS.md"
+      },
       "skills": [
-        "account-context", "account-plan", "account-research", "account-tiering",
-        "call-prep", "call-summary", "close-plan", "competitive-intelligence",
-        "create-an-asset", "crm-hygiene-check", "customer-health", "customer-voice",
-        "daily-briefing", "deal-advance-gap", "deal-review", "deal-signals",
-        "deal-slip-scenario", "draft-outreach", "end-of-day", "expansion-whitespace",
-        "forecast", "handle-objection", "inbox-sweep", "lead-triage",
-        "log-activity", "pipeline-review", "renewal-radar", "rep-context",
-        "route-lead", "schedule-meeting", "setup", "stakeholder-map",
-        "team-pipeline", "update-opportunity", "weekly-wrap", "win-loss-review"
+        "account-context",
+        "account-plan",
+        "account-research",
+        "account-tiering",
+        "call-prep",
+        "call-summary",
+        "close-plan",
+        "competitive-intelligence",
+        "create-an-asset",
+        "crm-hygiene-check",
+        "customer-health",
+        "customer-voice",
+        "daily-briefing",
+        "deal-advance-gap",
+        "deal-review",
+        "deal-signals",
+        "deal-slip-scenario",
+        "draft-outreach",
+        "end-of-day",
+        "expansion-whitespace",
+        "forecast",
+        "handle-objection",
+        "inbox-sweep",
+        "lead-triage",
+        "log-activity",
+        "pipeline-review",
+        "renewal-radar",
+        "rep-context",
+        "route-lead",
+        "schedule-meeting",
+        "setup",
+        "stakeholder-map",
+        "team-pipeline",
+        "update-opportunity",
+        "weekly-wrap",
+        "win-loss-review"
       ]
     },
     {
@@ -53,25 +75,59 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "extra_files": { ".agents/invocation.md": "_shared/invocation.md" },
+      "extra_files": {
+        ".agents/invocation.md": "_shared/invocation.md"
+      },
       "rewrites": [
-        { "from": "(?:\\.\\./)+\\.agents/invocation\\.md", "to": "../_shared/invocation.md" },
-        { "from": "\\.\\./\\.\\./[a-z-]+/([a-z0-9-]+)/", "to": "../\\1/" }
+        {
+          "from": "(?:\\.\\./)+\\.agents/invocation\\.md",
+          "to": "../_shared/invocation.md"
+        },
+        {
+          "from": "\\.\\./\\.\\./[a-z-]+/([a-z0-9-]+)/",
+          "to": "../\\1/"
+        }
       ],
       "skills": [
-        "accounts/account-handoff", "accounts/account-health", "accounts/book-of-business",
-        "accounts/churn-save", "accounts/client-escalation", "accounts/mutual-action-plan",
-        "accounts/renewal-risk", "accounts/value-realization",
-        "commercial/bid-no-bid", "commercial/deal-desk", "commercial/forecast-call", "commercial/reference-ask",
-        "comms/champion-coach", "comms/close-ask", "comms/demo-narrative", "comms/discovery-call",
-        "comms/economic-buyer", "comms/follow-up-48h", "comms/hostile-room", "comms/intro-ask",
-        "comms/negotiation-trades", "comms/objection-map", "comms/pre-read", "comms/proof-story",
-        "comms/proposal-narrative", "comms/stakeholder-message-map",
-        "documents/battle-card", "documents/sales-datasheet", "documents/sales-proposal",
-        "documents/solution-brief", "documents/trust-pack", "documents/value-eng",
-        "strategy/business-case", "strategy/competitive-teardown", "strategy/discount-exception",
-        "strategy/pricing-one-pager", "strategy/win-loss",
-        "management/qbr", "writing/pyramid-principle"
+        "accounts/account-handoff",
+        "accounts/account-health",
+        "accounts/book-of-business",
+        "accounts/churn-save",
+        "accounts/client-escalation",
+        "accounts/mutual-action-plan",
+        "accounts/renewal-risk",
+        "accounts/value-realization",
+        "commercial/bid-no-bid",
+        "commercial/deal-desk",
+        "commercial/forecast-call",
+        "commercial/reference-ask",
+        "comms/champion-coach",
+        "comms/close-ask",
+        "comms/demo-narrative",
+        "comms/discovery-call",
+        "comms/economic-buyer",
+        "comms/follow-up-48h",
+        "comms/hostile-room",
+        "comms/intro-ask",
+        "comms/negotiation-trades",
+        "comms/objection-map",
+        "comms/pre-read",
+        "comms/proof-story",
+        "comms/proposal-narrative",
+        "comms/stakeholder-message-map",
+        "documents/battle-card",
+        "documents/sales-datasheet",
+        "documents/sales-proposal",
+        "documents/solution-brief",
+        "documents/trust-pack",
+        "documents/value-eng",
+        "strategy/business-case",
+        "strategy/competitive-teardown",
+        "strategy/discount-exception",
+        "strategy/pricing-one-pager",
+        "strategy/win-loss",
+        "management/qbr",
+        "writing/pyramid-principle"
       ]
     },
     {
@@ -83,7 +139,12 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "skills": ["enrich-lead", "prospect", "sequence-load", "gtm-strategist"]
+      "skills": [
+        "enrich-lead",
+        "prospect",
+        "sequence-load",
+        "gtm-strategist"
+      ]
     },
     {
       "id": "marketingskills",
@@ -94,7 +155,15 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "skills": ["cold-email", "prospecting", "sales-enablement", "revops", "pricing", "competitors", "competitor-profiling"]
+      "skills": [
+        "cold-email",
+        "prospecting",
+        "sales-enablement",
+        "revops",
+        "pricing",
+        "competitors",
+        "competitor-profiling"
+      ]
     },
     {
       "id": "mbfinotti",
@@ -105,11 +174,21 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "rewrites": [{ "from": "mbfinotti/sales-skills@", "to": "" }],
+      "rewrites": [
+        {
+          "from": "mbfinotti/sales-skills@",
+          "to": ""
+        }
+      ],
       "skills": [
-        "meddpicc-scorecard", "sales-call-review", "deal-red-flags", "deal-value-calc",
-        "negotiation-concession-planner", "deal-champion-mapping",
-        "sales-pipeline-coverage-modeling", "sales-discovery-questions"
+        "meddpicc-scorecard",
+        "sales-call-review",
+        "deal-red-flags",
+        "deal-value-calc",
+        "negotiation-concession-planner",
+        "deal-champion-mapping",
+        "sales-pipeline-coverage-modeling",
+        "sales-discovery-questions"
       ]
     },
     {
@@ -121,7 +200,9 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "commercial/skills",
-      "skills": ["rfp-responder"]
+      "skills": [
+        "rfp-responder"
+      ]
     },
     {
       "id": "awesome-copilot",
@@ -132,7 +213,9 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "skills": ["gtm-enterprise-account-planning"]
+      "skills": [
+        "gtm-enterprise-account-planning"
+      ]
     },
     {
       "id": "craig-hewitt",
@@ -143,7 +226,9 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "skills": ["linkedin-outreach"]
+      "skills": [
+        "linkedin-outreach"
+      ]
     },
     {
       "id": "lmty",
@@ -154,7 +239,9 @@
       "license": "MIT",
       "license_file": "LICENSE",
       "base": "skills",
-      "skills": ["competitive-poc-rfp-plan"]
+      "skills": [
+        "competitive-poc-rfp-plan"
+      ]
     }
   ]
 }

@@ -6,8 +6,8 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## 0.1.0 (2026-11-05)
 
-- Initial library: 111 skills.
-  - 13 Zevero originals.
+- Initial library: 104 skills.
+  - 6 Zevero originals.
   - 36 from Anthropic's sales plugin.
   - 39 sales, account and deal skills from The Hard Half.
   - 7 from marketingskills.

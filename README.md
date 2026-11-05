@@ -2,11 +2,11 @@
 
 Every sales skill the Zevero commercial team uses, in one Claude plugin: our own playbooks plus vetted public skills for prospecting, discovery, deal reviews, proposals, negotiation and account management.
 
-**→ [Browse the catalog](CATALOG.md)** (111 skills, generated from the files in this repo)
+**→ [Browse the catalog](CATALOG.md)** (104 skills, generated from the files in this repo)
 
 | Group | Folder | What's in it |
 |---|---|---|
-| Zevero originals | `skills/zevero/` | Our own skills: discovery briefs, HubSpot updates and enrichment, value follow-up PDFs, CCO briefs, Commercial Pulse |
+| Zevero originals | `skills/zevero/` | Our own skills: discovery briefs, HubSpot updates and enrichment, value follow-up PDFs, Commercial Pulse |
 | Anthropic sales | `skills/anthropic-sales/` | Call prep, call summaries, deal reviews, pipeline, forecast, outreach |
 | The Hard Half | `skills/hard-half/` | Discovery calls, objection maps, champions, economic buyers, negotiation, proposals, renewals |
 | mbfinotti | `skills/mbfinotti/` | MEDDPICC scorecard, call review, deal red flags, ROI calculator, concession planner |
