@@ -19,7 +19,7 @@ Every sales skill the Zevero commercial team uses, in one Claude plugin: our own
 **Claude Code** (needs read access to this private repo):
 
 ```bash
-claude plugin marketplace add GeorgeWade0/sales-skills
+claude plugin marketplace add GeorgeWade0/zevero-sales-skills
 ```
 
 ```bash
