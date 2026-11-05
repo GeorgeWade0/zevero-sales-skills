@@ -17,7 +17,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ROOT / "skills"
-PLUGIN = "zevero-sales"
 VERSION_FILE = ROOT / "VERSION"
 
 
@@ -98,19 +97,37 @@ def main():
 
     # ---- generated files
     version = VERSION_FILE.read_text().strip()
-    plugin = {
-        "name": PLUGIN,
-        "displayName": "Zevero Sales Skills",
-        "version": version,
-        "description": "Zevero's sales skills in one plugin: our own playbooks plus vetted public skills for prospecting, discovery, deal reviews, proposals, negotiation and account management.",
-        "author": {"name": "Zevero Commercial team"},
-        "skills": [f"./skills/{k}" for _, _, k in rows],
-    }
+    kits = json.loads((ROOT / "kits.json").read_text())
+    key_of = {fm["name"]: key for _, fm, key in rows}
+    kit_membership = {}
+
+    def entry(name, display, description, skill_names):
+        missing = [n for n in skill_names if n not in key_of]
+        for n in missing:
+            errors.append(f"kits.json: '{n}' in {name} is not a skill in this repo")
+        keys = sorted({key_of[n] for n in skill_names if n in key_of})
+        for k in keys:
+            kit_membership.setdefault(k, []).append(name.replace("zevero-sales-", ""))
+        return {
+            "name": name,
+            "displayName": display,
+            "description": description,
+            "version": version,
+            "author": {"name": "Zevero Commercial team"},
+            "source": "./",
+            "strict": False,
+            "skills": [f"./skills/{k}" for k in keys],
+            "hooks": "./hooks/hooks.json",
+        }
+
+    plugins = [entry(k["name"], k["displayName"], k["description"], kits["core"] + k["skills"]) for k in kits["kits"]]
+    a = kits["all"]
+    plugins.append(entry(a["name"], a["displayName"], a["description"], [fm["name"] for _, fm, _ in rows]))
     marketplace = {
         "name": "zevero-sales",
         "owner": {"name": "Zevero"},
-        "metadata": {"description": "Zevero internal sales skills", "version": version},
-        "plugins": [{"name": PLUGIN, "description": plugin["description"], "source": "./", "version": version}],
+        "metadata": {"description": "Zevero's internal sales skills: one kit per role, plus everything.", "version": version},
+        "plugins": plugins,
     }
 
     lines = [
@@ -135,14 +152,15 @@ def main():
             ]
         else:
             lines += ["Owned and edited in this repo. Changes go through a PR.", ""]
-        lines += ["| Skill | What it does |", "|---|---|"]
+        lines += ["| Skill | Kits | What it does |", "|---|---|---|"]
         for _, fm, key in sorted(mine, key=lambda r: r[1]["name"]):
             desc = first_sentence(fm["description"]).replace("|", "\\|")
-            lines.append(f"| [`{fm['name']}`](skills/{key}/SKILL.md) | {desc} |")
+            in_kits = [k for k in kit_membership.get(key, []) if k != "zevero-sales"]
+            label = "all" if len(in_kits) == len(kits["kits"]) else ", ".join(in_kits) or "–"
+            lines.append(f"| [`{fm['name']}`](skills/{key}/SKILL.md) | {label} | {desc} |")
         lines.append("")
 
     outputs = {
-        ROOT / ".claude-plugin" / "plugin.json": json.dumps(plugin, indent=2) + "\n",
         ROOT / ".claude-plugin" / "marketplace.json": json.dumps(marketplace, indent=2) + "\n",
         ROOT / "CATALOG.md": "\n".join(lines),
     }
