@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Commercial Pulse</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #fafaf7;
+    --card: #ffffff;
+    --ink: #1c1c1c;
+    --ink-2: #5b5b5b;
+    --ink-3: #8a8a85;
+    --line: #ececea;
+    --line-strong: #d8d8d4;
+    --accent: #2d6a4f;
+    --accent-soft: #e8f1ec;
+    --warn: #b5651d;
+    --warn-soft: #faefe1;
+    --danger: #9b2c2c;
+    --danger-soft: #fdeaea;
+    --muted: #f2f2ee;
+    --bar: #2d6a4f;
+    --renewal: #6b5ba8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif; font-size: 14px; line-height: 1.45; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px 24px 80px; }
+  header.top { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; gap: 16px; flex-wrap: wrap; }
+  header.top h1 { font-size: 20px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  header.top .sub { color: var(--ink-2); font-size: 13px; }
+  header.top .meta { font-size: 12px; color: var(--ink-3); display: flex; gap: 10px; align-items: center; }
+  header.top .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+  @media (max-width: 780px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+  .tile { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .tile .label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); margin-bottom: 4px; }
+  .tile .value { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); }
+  .tile .delta { font-size: 12px; color: var(--ink-2); margin-top: 4px; }
+  .tile .delta.accent { color: var(--accent); }
+  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; }
+  section.card h2 { margin: 0 0 12px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); display: flex; justify-content: space-between; align-items: baseline; }
+  section.card h2 .count { font-weight: 500; color: var(--ink-3); letter-spacing: 0; text-transform: none; font-size: 12px; }
+  .funnel { display: grid; grid-template-columns: 160px 1fr 140px; gap: 10px; align-items: center; padding: 6px 0; border-top: 1px solid var(--line); }
+  .funnel:first-of-type { border-top: none; }
+  .funnel .stage { font-size: 13px; color: var(--ink); font-weight: 500; }
+  .funnel .barwrap { height: 18px; background: var(--muted); border-radius: 4px; position: relative; overflow: hidden; }
+  .funnel .bar { height: 100%; background: var(--bar); border-radius: 4px; min-width: 2px; }
+  .funnel.renewal .bar { background: var(--renewal); }
+  .funnel .num { font-size: 12px; color: var(--ink-2); text-align: right; font-variant-numeric: tabular-nums; }
+  ul.deals { list-style: none; margin: 0; padding: 0; }
+  ul.deals li { display: grid; grid-template-columns: 10px 1fr auto auto; gap: 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+  ul.deals li:first-child { border-top: none; padding-top: 4px; }
+  ul.deals li .rag { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); }
+  .rag.green { background: var(--accent); }
+  .rag.amber { background: var(--warn); }
+  .rag.red { background: var(--danger); }
+  .rag.renewal { background: var(--renewal); }
+  ul.deals li .body { min-width: 0; }
+  ul.deals li .title { font-size: 14px; font-weight: 500; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  ul.deals li .title a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line-strong); }
+  ul.deals li .title a:hover { border-bottom-color: var(--ink-2); color: var(--accent); }
+  ul.deals li .meta { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+  ul.deals li .meta .sep { color: var(--ink-3); margin: 0 6px; }
+  ul.deals li .amt { font-size: 13px; color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+  ul.deals li .amt .fx { font-size: 10px; color: var(--ink-3); font-weight: 400; display: block; }
+  ul.deals li .when { font-size: 11px; color: var(--ink-3); white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+  ul.deals li .badge { font-size: 10px; font-weight: 600; letter-spacing: 0.04em; padding: 2px 5px; border-radius: 3px; margin-left: 6px; }
+  .badge.overdue { background: var(--danger-soft); color: var(--danger); }
+  .badge.hot { background: var(--warn-soft); color: var(--warn); }
+  .badge.region { background: var(--muted); color: var(--ink-2); }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+  .empty { color: var(--ink-3); font-size: 13px; padding: 6px 0; }
+  .err { color: var(--danger); font-size: 12px; padding: 6px 0; }
+  .skeleton { background: linear-gradient(90deg, var(--muted) 0%, #f8f8f4 50%, var(--muted) 100%); background-size: 200% 100%; animation: shimmer 1.4s ease-in-out infinite; border-radius: 4px; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .sk-line { height: 12px; margin: 8px 0; }
+  .sk-line.w80 { width: 80%; } .sk-line.w60 { width: 60%; } .sk-line.w40 { width: 40%; }
+  footer { margin-top: 24px; font-size: 12px; color: var(--ink-3); text-align: center; }
+  footer .hint { display: inline-block; padding: 4px 10px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; }
+  .legend { font-size: 11px; color: var(--ink-3); margin-top: 6px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Commercial Pulse</h1>
+      <div class="sub" id="today-label">Loading…</div>
+    </div>
+    <div class="meta">
+      <span class="dot"></span>
+      <span>All figures USD · Next refresh in <span id="countdown">10:00</span></span>
+    </div>
+  </header>
+  <div class="tiles">
+    <div class="tile" id="tile-pipe"><div class="label">Open pipeline</div><div class="value"><div class="sk-line skeleton w80"></div></div><div class="delta"><div class="sk-line skeleton w60"></div></div></div>
+    <div class="tile" id="tile-weighted"><div class="label">Weighted pipeline</div><div class="value"><div class="sk-line skeleton w80"></div></div><div class="delta"><div class="sk-line skeleton w60"></div></div></div>
+    <div class="tile" id="tile-closing"><div class="label">Closing this month</div><div class="value"><div class="sk-line skeleton w80"></div></div><div class="delta"><div class="sk-line skeleton w60"></div></div></div>
+    <div class="tile" id="tile-won"><div class="label">Closed won MTD</div><div class="value"><div class="sk-line skeleton w80"></div></div><div class="delta"><div class="sk-line skeleton w60"></div></div></div>
+  </div>
+  <section class="card">
+    <h2>New-biz pipeline by stage <span class="count" id="newbiz-count"></span></h2>
+    <div id="newbiz-funnel">
+      <div class="funnel"><div class="stage skeleton sk-line w60"></div><div class="barwrap skeleton"></div><div class="num skeleton sk-line w40"></div></div>
+      <div class="funnel"><div class="stage skeleton sk-line w60"></div><div class="barwrap skeleton"></div><div class="num skeleton sk-line w40"></div></div>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background: var(--bar)"></span>USD amount (pre-converted from native currency by HubSpot)</span>
+      <span>Combines UK, JP, APAC sales pipelines · stage names normalised</span>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Renewal pipeline <span class="count" id="renewal-count"></span></h2>
+    <div id="renewal-funnel">
+      <div class="funnel"><div class="stage skeleton sk-line w60"></div><div class="barwrap skeleton"></div><div class="num skeleton sk-line w40"></div></div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Closing this month <span class="count" id="closing-count"></span></h2>
+    <ul class="deals" id="closing-list">
+      <li><div></div><div class="body"><div class="sk-line skeleton w80"></div><div class="sk-line skeleton w60"></div></div><div></div><div></div></li>
+    </ul>
+    <div class="legend">
+      <span><span class="dot" style="background: var(--accent)"></span>Commit (Verbal / Contracting)</span>
+      <span><span class="dot" style="background: var(--warn)"></span>Best case (Proposal / Negotiation / Trial)</span>
+      <span><span class="dot" style="background: var(--danger)"></span>At risk (Discovery / Demo / Scoping)</span>
+    </div>
+  </section>
+  <div class="two-col">
+    <section class="card">
+      <h2>Top stallers <span class="count" id="staller-count"></span></h2>
+      <ul class="deals" id="staller-list"><li><div></div><div class="body"><div class="sk-line skeleton w80"></div></div><div></div><div></div></li></ul>
+      <div class="legend"><span>Open deals with no contact logged in 14+ days, ordered by USD value</span></div>
+    </section>
+    <section class="card">
+      <h2>Hygiene — overdue close date <span class="count" id="hygiene-count"></span></h2>
+      <ul class="deals" id="hygiene-list"><li><div></div><div class="body"><div class="sk-line skeleton w80"></div></div><div></div><div></div></li></ul>
+      <div class="legend"><span>Open deals whose close date has already passed — update or close them</span></div>
+    </section>
+  </div>
+  <footer><span class="hint">Commercial Pulse · live from Zevero HubSpot · all USD · refreshes every 10 min</span></footer>
+</div>
+<script>
+(async () => {
+  const $ = (s) => document.querySelector(s);
+  const setText = (sel, txt) => { const el = $(sel); if (el) el.textContent = txt; };
+  const now = new Date();
+  const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
+  const monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+  setText("#today-label", now.toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" }));
+  let remaining = 10 * 60;
+  const fmtRem = (s) => `${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}`;
+  setText("#countdown", fmtRem(remaining));
+  setInterval(() => { remaining = Math.max(0, remaining - 1); setText("#countdown", fmtRem(remaining)); if (remaining === 0) location.reload(); }, 1000);
+  const NEWBIZ_PIPELINES = ["740537691", "751468103", "746359176"];
+  const RENEWAL_PIPELINE = "765893559";
+  const PIPELINE_REGION = { "740537691": "UK", "751468103": "JP", "746359176": "APAC", "765893559": "Renewal" };
+  const STAGE_MAP = {
+    "1077320478": "Discovery", "1077320479": "Demo Scheduled", "1077320480": "Scoping",
+    "1077320481": "Proposal Sent", "1077320482": "Negotiation",
+    "1077299565": "Verbal Agreement", "1077299566": "Trial",
+    "1077320483": "Closed Won", "1077320484": "Closed Lost", "1077299567": "Revisit Later",
+    "1094431809": "Discovery", "1094431810": "Demo Scheduled", "1094431811": "Scoping",
+    "1094431812": "Proposal Sent", "1094431813": "Negotiation",
+    "1094491958": "Verbal Agreement", "1094491959": "Trial",
+    "1094431814": "Closed Won", "1094431815": "Closed Lost", "1094367565": "Revisit Later",
+    "1085121090": "Discovery", "1085121091": "Demo Scheduled", "1085121092": "Scoping",
+    "1085121093": "Proposal Sent", "1085330741": "Negotiation",
+    "1085121094": "Verbal Agreement", "1085330742": "Trial",
+    "1085121095": "Closed Won", "1085121096": "Closed Lost", "1085330743": "Revisit Later",
+    "1115711654": "Identified", "1115711655": "Meeting Scheduled",
+    "1115711656": "Verbal Agreement", "1115711657": "Contracting",
+    "1115711659": "Closed Won", "1115711660": "Closed Lost"
+  };
+  const NEWBIZ_ORDER = ["Discovery", "Demo Scheduled", "Scoping", "Proposal Sent", "Negotiation", "Trial", "Verbal Agreement"];
+  const RENEWAL_ORDER = ["Identified", "Meeting Scheduled", "Contracting", "Verbal Agreement"];
+  const COMMIT_STAGES = new Set(["Verbal Agreement", "Contracting"]);
+  const BESTCASE_STAGES = new Set(["Proposal Sent", "Negotiation", "Trial"]);
+  const parseMcp = (res) => {
+    if (!res) return null;
+    if (res.isError) throw new Error(res.error || "mcp error");
+    if (res.structuredContent) return res.structuredContent;
+    if (Array.isArray(res.content)) {
+      const text = res.content.map(c => c.text || "").join("");
+      try { return JSON.parse(text); } catch { return { text }; }
+    }
+    return res;
+  };
+  const call = async (name, args) => {
+    try { return parseMcp(await window.cowork.callMcpTool(name, args)); }
+    catch (e) { return { __err: e.message || String(e) }; }
+  };
+  const fmtUSD = (n) => {
+    if (!isFinite(n) || !n) return "$0";
+    if (Math.abs(n) >= 1e6) return `$${(n/1e6).toFixed(2)}M`;
+    if (Math.abs(n) >= 1000) return `$${Math.round(n/1000)}k`;
+    return `$${Math.round(n).toLocaleString()}`;
+  };
+  const fmtUSDexact = (n) => `$${Math.round(n).toLocaleString()}`;
+  const fmtNative = (n, code) => {
+    if (!n || !code || code === "USD") return "";
+    const sym = { GBP: "£", EUR: "€", JPY: "¥", AUD: "A$", NZD: "NZ$", SGD: "S$", HKD: "HK$" }[code] || code + " ";
+    if (code === "JPY") {
+      if (n >= 1e6) return `${sym}${(n/1e6).toFixed(1)}M`;
+      if (n >= 1000) return `${sym}${Math.round(n/1000)}k`;
+      return `${sym}${Math.round(n).toLocaleString()}`;
+    }
+    if (n >= 1000) return `${sym}${Math.round(n/1000)}k`;
+    return `${sym}${Math.round(n).toLocaleString()}`;
+  };
+  const daysBetween = (a, b) => Math.round((a - b) / (24*60*60*1000));
+  const dealUrl = (id) => `https://app.hubspot.com/contacts/20432895/record/0-3/${id}`;
+  const escapeHtml = (s) => (s || "").toString().replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+  // Find the right HubSpot tool name (server prefix can vary per install)
+  async function findTool(suffix) {
+    return null;
+  }
+  // Hard-code known prefix — same across this org
+  const TOOL = "mcp__1c001c12-08ac-42b6-9021-e8066bcbb1de__search_crm_objects";
+  async function searchAll(filterGroups, properties, cap = 600) {
+    const all = [];
+    let offset = 0;
+    let total = null;
+    while (all.length < cap) {
+      const res = await call(TOOL, {
+        objectType: "deals",
+        chatInsights: { userIntent: "Commercial pulse artifact fetching deals", satisfaction: "NEUTRAL" },
+        filterGroups, properties, limit: 200, offset
+      });
+      if (res.__err) { all.__err = res.__err; break; }
+      const page = res.results || [];
+      all.push(...page);
+      total = res.total ?? (offset + page.length);
+      if (page.length < 200) break;
+      offset = res.offset || (offset + page.length);
+      if (offset >= total) break;
+    }
+    return all;
+  }
+  const dealProps = [
+    "dealname", "amount", "amount_in_home_currency", "hs_projected_amount_in_home_currency",
+    "deal_currency_code", "dealstage", "pipeline", "closedate",
+    "hs_deal_stage_probability", "hs_lastmodifieddate", "notes_last_contacted",
+    "hs_next_step", "hubspot_owner_id", "createdate"
+  ];
+  const [newbiz, renewals, wonMtd] = await Promise.all([
+    searchAll([{ filters: [
+      { propertyName: "pipeline", operator: "IN", values: NEWBIZ_PIPELINES },
+      { propertyName: "hs_is_closed", operator: "EQ", value: "false" }
+    ]}], dealProps),
+    searchAll([{ filters: [
+      { propertyName: "pipeline", operator: "EQ", value: RENEWAL_PIPELINE },
+      { propertyName: "hs_is_closed", operator: "EQ", value: "false" }
+    ]}], dealProps),
+    searchAll([{ filters: [
+      { propertyName: "pipeline", operator: "IN", values: [...NEWBIZ_PIPELINES, RENEWAL_PIPELINE] },
+      { propertyName: "hs_is_closed_won", operator: "EQ", value: "true" },
+      { propertyName: "closedate", operator: "GTE", value: String(monthStart.getTime()) },
+      { propertyName: "closedate", operator: "LTE", value: String(monthEnd.getTime()) }
+    ]}], ["dealname", "amount_in_home_currency", "amount", "deal_currency_code", "closedate", "pipeline", "dealstage", "hubspot_owner_id"])
+  ]);
+  if (newbiz.__err) $("#newbiz-funnel").innerHTML = `<div class="err">HubSpot: ${escapeHtml(newbiz.__err)}</div>`;
+  const enrich = (d) => {
+    const p = d.properties || {};
+    const amtUsd = parseFloat(p.amount_in_home_currency || "0") || 0;
+    const amtNative = parseFloat(p.amount || "0") || 0;
+    const weightedUsd = parseFloat(p.hs_projected_amount_in_home_currency || "0") || 0;
+    const prob = parseFloat(p.hs_deal_stage_probability || "0") || 0;
+    const currency = p.deal_currency_code || "USD";
+    const stage = STAGE_MAP[p.dealstage] || "Other";
+    const region = PIPELINE_REGION[p.pipeline] || "";
+    const closedate = p.closedate ? new Date(p.closedate) : null;
+    const lastContacted = p.notes_last_contacted ? new Date(p.notes_last_contacted) : null;
+    const lastModified = p.hs_lastmodifieddate ? new Date(p.hs_lastmodifieddate) : null;
+    return { id: d.id, name: p.dealname || "(unnamed)", amtUsd, amtNative, weightedUsd, prob, currency, stage, region, closedate, lastContacted, lastModified };
+  };
+  const nb = (newbiz || []).map(enrich);
+  const rn = (renewals || []).map(enrich);
+  const won = (wonMtd || []).map(enrich);
+  const openAll = [...nb, ...rn];
+  const openTotal = openAll.reduce((s, d) => s + d.amtUsd, 0);
+  const weighted = openAll.reduce((s, d) => s + (d.weightedUsd || d.amtUsd * d.prob), 0);
+  const closingThisMonth = openAll.filter(d => d.closedate && d.closedate >= monthStart && d.closedate <= monthEnd);
+  const closingAmt = closingThisMonth.reduce((s, d) => s + d.amtUsd, 0);
+  const wonAmt = won.reduce((s, d) => s + d.amtUsd, 0);
+  document.getElementById("tile-pipe").innerHTML = `<div class="label">Open pipeline</div><div class="value">${fmtUSD(openTotal)}</div><div class="delta">${openAll.length} open deals · ${nb.length} new biz, ${rn.length} renewal</div>`;
+  document.getElementById("tile-weighted").innerHTML = `<div class="label">Weighted pipeline</div><div class="value">${fmtUSD(weighted)}</div><div class="delta">Stage probability × amount</div>`;
+  const commitInClosing = closingThisMonth.filter(d => COMMIT_STAGES.has(d.stage)).reduce((s, d) => s + d.amtUsd, 0);
+  const bestInClosing = closingThisMonth.filter(d => BESTCASE_STAGES.has(d.stage)).reduce((s, d) => s + d.amtUsd, 0);
+  document.getElementById("tile-closing").innerHTML = `<div class="label">Closing this month</div><div class="value">${fmtUSD(closingAmt)}</div><div class="delta accent">${fmtUSD(commitInClosing)} commit · <span style="color: var(--warn)">${fmtUSD(bestInClosing)}</span> best-case · ${closingThisMonth.length} deals</div>`;
+  document.getElementById("tile-won").innerHTML = `<div class="label">Closed won MTD</div><div class="value">${fmtUSD(wonAmt)}</div><div class="delta accent">${won.length} deal${won.length === 1 ? "" : "s"} won in ${now.toLocaleDateString(undefined, { month: "long" })}</div>`;
+  function renderFunnel(sel, deals, order, cls) {
+    const bucket = new Map();
+    for (const s of order) bucket.set(s, { count: 0, amt: 0 });
+    for (const d of deals) { const b = bucket.get(d.stage); if (b) { b.count++; b.amt += d.amtUsd; } }
+    const maxAmt = Math.max(1, ...Array.from(bucket.values()).map(b => b.amt));
+    $(sel).innerHTML = order.map(s => {
+      const b = bucket.get(s);
+      const pct = (b.amt / maxAmt) * 100;
+      return `<div class="funnel ${cls || ""}"><div class="stage">${escapeHtml(s)}</div><div class="barwrap"><div class="bar" style="width: ${pct.toFixed(1)}%"></div></div><div class="num">${b.count} · ${fmtUSD(b.amt)}</div></div>`;
+    }).join("");
+  }
+  renderFunnel("#newbiz-funnel", nb, NEWBIZ_ORDER);
+  renderFunnel("#renewal-funnel", rn, RENEWAL_ORDER, "renewal");
+  setText("#newbiz-count", `${nb.length} open · ${fmtUSDexact(nb.reduce((s, d) => s + d.amtUsd, 0))}`);
+  setText("#renewal-count", `${rn.length} open · ${fmtUSDexact(rn.reduce((s, d) => s + d.amtUsd, 0))}`);
+  function dealRow(d, ragCls, rightTop, rightBottom, extraBadges) {
+    const regionBadge = d.region && d.region !== "UK" ? `<span class="badge region">${escapeHtml(d.region)}</span>` : "";
+    const fx = (d.currency && d.currency !== "USD" && d.amtNative) ? `<span class="fx">${escapeHtml(fmtNative(d.amtNative, d.currency))}</span>` : "";
+    return `<li><div class="rag ${ragCls}"></div><div class="body"><div class="title"><a href="${dealUrl(d.id)}" target="_blank" rel="noopener">${escapeHtml(d.name)}</a>${regionBadge}${extraBadges || ""}</div><div class="meta">${escapeHtml(d.stage)}${rightBottom ? `<span class="sep">·</span>${rightBottom}` : ""}</div></div><div class="amt">${fmtUSDexact(d.amtUsd)}${fx}</div><div class="when">${rightTop || ""}</div></li>`;
+  }
+  const closingSorted = closingThisMonth.slice().sort((a, b) => (a.closedate - b.closedate) || (b.amtUsd - a.amtUsd));
+  setText("#closing-count", `${closingSorted.length} · ${fmtUSDexact(closingAmt)}`);
+  const closingEl = $("#closing-list");
+  if (!closingSorted.length) closingEl.innerHTML = `<li class="empty">No deals scheduled to close this month.</li>`;
+  else closingEl.innerHTML = closingSorted.map(d => {
+    const rag = COMMIT_STAGES.has(d.stage) ? "green" : (BESTCASE_STAGES.has(d.stage) ? "amber" : "red");
+    const daysToClose = daysBetween(d.closedate, now);
+    const dueStr = daysToClose < 0 ? `${-daysToClose}d overdue` : (daysToClose === 0 ? "today" : `in ${daysToClose}d`);
+    const overdueBadge = daysToClose < 0 ? `<span class="badge overdue">${escapeHtml(dueStr)}</span>` : "";
+    const bottom = `${escapeHtml(d.closedate.toLocaleDateString(undefined, { month: "short", day: "numeric" }))} <span class="sep">·</span>prob ${Math.round(d.prob * 100)}%`;
+    return dealRow(d, rag, escapeHtml(dueStr), bottom, overdueBadge);
+  }).join("");
+  const STALL_DAYS = 14;
+  const stallers = openAll.filter(d => {
+    const ref = d.lastContacted || d.lastModified;
+    if (!ref) return true;
+    return daysBetween(now, ref) >= STALL_DAYS;
+  }).filter(d => d.amtUsd > 0).sort((a, b) => b.amtUsd - a.amtUsd).slice(0, 10);
+  const totalStalled = openAll.filter(d => { const ref = d.lastContacted || d.lastModified; return !ref || daysBetween(now, ref) >= STALL_DAYS; }).length;
+  setText("#staller-count", stallers.length ? `top ${stallers.length} of ${totalStalled}` : "");
+  const stallerEl = $("#staller-list");
+  if (!stallers.length) stallerEl.innerHTML = `<li class="empty">No stalled deals — nice.</li>`;
+  else stallerEl.innerHTML = stallers.map(d => {
+    const ref = d.lastContacted || d.lastModified;
+    const ageDays = ref ? daysBetween(now, ref) : null;
+    const ageStr = ageDays === null ? "never" : `${ageDays}d ago`;
+    const hotBadge = d.amtUsd >= 10000 ? `<span class="badge hot">hot</span>` : "";
+    return dealRow(d, "amber", "", `last touch ${escapeHtml(ageStr)}`, hotBadge);
+  }).join("");
+  const overdue = openAll.filter(d => d.closedate && d.closedate < monthStart).sort((a, b) => a.closedate - b.closedate).slice(0, 10);
+  setText("#hygiene-count", overdue.length ? `${overdue.length} deals` : "");
+  const hygEl = $("#hygiene-list");
+  if (!overdue.length) hygEl.innerHTML = `<li class="empty">Close dates all in the future — clean.</li>`;
+  else hygEl.innerHTML = overdue.map(d => {
+    const daysLate = daysBetween(now, d.closedate);
+    const bottom = `close date ${escapeHtml(d.closedate.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }))}`;
+    return dealRow(d, "red", `${daysLate}d late`, bottom, "");
+  }).join("");
+})();
+</script>
+</body>
+</html>
