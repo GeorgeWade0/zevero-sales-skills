@@ -30,11 +30,26 @@ New to the team? Ask Claude to **"role-play a discovery call"** to practise, and
 | Apollo | `skills/apollo/` | Prospecting, enrichment and sequences (needs the Apollo connector) |
 | Others | `skills/rfp/`, `skills/lmty/`, `skills/awesome-copilot/`, `skills/craig-hewitt/` | RFP responses, competitive POCs, enterprise account planning, LinkedIn outreach |
 
-## Install
+## Install (reps: one click, no GitHub needed)
 
-You need an invite to this private repo first. Ask George, and accept the email from GitHub.
+Open the link for your kit while signed in to Claude with your Zevero account, then click **Add**:
 
-**One-time setup:** install Claude Code and the GitHub CLI, then log in to GitHub:
+| Kit | Link |
+|---|---|
+| SDR | https://claude.ai/customize/plugins/plugin_01LXw8QzbM8PSMLZTR3vy7NQ |
+| AE | https://claude.ai/customize/plugins/plugin_01WigpNgH1TpYGyzehi3f1P5 |
+| Account Manager | https://claude.ai/customize/plugins/plugin_019zKcnhRfxSAaPm79yioo4c |
+| Leader | https://claude.ai/customize/plugins/plugin_01DrA5S42adTPWoKzUpqo6xJ |
+
+The kits work in the Claude app, in Cowork and in Claude Code. In Claude Code you can also run `/plugin install zevero-sales-ae@claudeai-organization-library`, swapping in your kit's name. Updates arrive through the org library whenever a new version is published.
+
+Many skills work best with connectors: HubSpot, Gmail, Google Calendar, Slack, Granola and Apollo. See [`skills/anthropic-sales/CONNECTORS.md`](skills/anthropic-sales/CONNECTORS.md).
+
+**Usage is logged** (which skill, who, when; never prompts or outputs) so we can see what's working. Details and opt-out: [docs/usage-tracking.md](docs/usage-tracking.md).
+
+### Contributors: install from GitHub
+
+You only need this if you edit skills. It requires access to this private repo.
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
@@ -44,32 +59,25 @@ curl -fsSL https://claude.ai/install.sh | bash
 brew install gh && gh auth login --web --git-protocol https && gh auth setup-git
 ```
 
-**Install the plugin** (open a new terminal tab first):
-
 ```bash
 claude plugin marketplace add GeorgeWade0/zevero-sales-skills
 ```
 
 ```bash
-claude plugin install zevero-sales-ae@zevero-sales
+claude plugin install zevero-sales@zevero-sales
 ```
 
-Swap `zevero-sales-ae` for your kit. Skills show up as `<kit>:<skill>`, e.g. `/zevero-sales-ae:discovery-brief`, and Claude also picks them automatically. Run `claude plugin update zevero-sales-ae` when a release is announced.
-
-**Usage is logged** (which skill, who, when; never prompts or outputs) so we can see what's working. Details and opt-out: [docs/usage-tracking.md](docs/usage-tracking.md).
+`zevero-sales` contains every skill. The role kits are also available here as `zevero-sales-<role>@zevero-sales`.
 
 ## Request or improve a skill
 
 - **Easiest:** ask Claude "request a skill for …" or "the discovery-brief skill got this wrong". The `request-skill` skill drafts the request, shows it to you and files it here.
-- **On GitHub:** go to [Issues → New issue](https://github.com/GeorgeWade0/zevero-sales-skills/issues/new/choose) and pick **Request a new skill**, **Improve an existing skill** or **Something's broken**.
+- **No GitHub account?** That's fine. The skill sends your request to George on Slack instead.
+- **On GitHub (contributors):** go to [Issues → New issue](https://github.com/GeorgeWade0/zevero-sales-skills/issues/new/choose) and pick **Request a new skill**, **Improve an existing skill** or **Something's broken**.
 
 Requests are reviewed weekly. You'll get a GitHub notification when yours is `approved` and again when it ships. After any skill output you can also just reply 👍 or "improve".
 
-**Claude desktop / Cowork:** an org admin uploads the plugin once (Settings → Plugins → add from GitHub), and it's available to the whole team.
-
-If you already have Anthropic's `sales` plugin installed, you can remove it. Its skills are included here.
-
-Many skills work best with connectors: HubSpot, Gmail, Google Calendar, Slack, Granola and Apollo. See [`skills/anthropic-sales/CONNECTORS.md`](skills/anthropic-sales/CONNECTORS.md).
+If you already have Anthropic's `sales` plugin installed, you can remove it. Its skills are included in the kits.
 
 ## How changes are tracked
 

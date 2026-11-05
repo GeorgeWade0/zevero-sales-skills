@@ -4,6 +4,9 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## Unreleased
 
+- Role kits published to the Zevero Claude org library: reps install with one click, no GitHub needed (@GeorgeWade0)
+- [request-skill] Sends the request to George on Slack when the rep has no GitHub access (@GeorgeWade0)
+
 ## 0.2.0 (2026-11-05)
 
 - Role kits: install `zevero-sales-sdr`, `-ae`, `-am` or `-leader` instead of everything (@GeorgeWade0)

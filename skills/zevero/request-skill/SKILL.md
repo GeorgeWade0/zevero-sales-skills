@@ -49,10 +49,12 @@ gh issue create -R GeorgeWade0/zevero-sales-skills --title "<title>" --label "sk
 
 For an improvement, use `--label "skill-improvement,triage"`. Write the body to a temp file rather than passing it inline. Return the issue URL to the user.
 
-If `gh` isn't available, give the user this link to open and paste the body into:
+Most reps install the kits from the Claude app and have no GitHub access. If `gh` isn't installed, isn't logged in, or can't see the repo (`gh repo view GeorgeWade0/zevero-sales-skills` fails), send the request to George on Slack instead:
 
-- New skill: https://github.com/GeorgeWade0/zevero-sales-skills/issues/new?template=1-new-skill.yml
-- Improvement: https://github.com/GeorgeWade0/zevero-sales-skills/issues/new?template=2-improve-skill.yml
+- **If the Slack connector is available:** send the confirmed title and body as a DM to George Wade (Slack user ID `U01SRM118T1`). Start the message with `Skill request from <user's name>:`. This uses the same yes from step 3; don't ask again.
+- **Otherwise:** give the user the message to paste to George in Slack or email.
+
+George files it on GitHub, so it's still tracked.
 
 ## 5. Close out
 
