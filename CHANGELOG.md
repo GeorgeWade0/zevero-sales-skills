@@ -4,6 +4,9 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## Unreleased
 
+- [ai-tells] [zevero-sales-context] Learned from feedback: de-tell runs on internal docs, decks, agendas and briefs too, not only customer drafts; consultant labels like "grow the base" added to the list (@self-improve)
+- [zevero-presentation] Learned from feedback: keep decks short, one slide per region or topic, no agenda or header-only slides (@self-improve)
+
 - Fix: kits failed to load in Claude Code ("hooks: the file-path and array forms are not yet supported in a marketplace entry"). Marketplace entries no longer set `hooks`; `hooks/hooks.json` is picked up automatically (@GeorgeWade0)
 - Role kits published to the Zevero Claude org library: reps install with one click, no GitHub needed (@GeorgeWade0)
 - [request-skill] Sends the request to George on Slack when the rep has no GitHub access (@GeorgeWade0)

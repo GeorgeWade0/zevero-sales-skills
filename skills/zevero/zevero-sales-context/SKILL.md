@@ -13,7 +13,7 @@ The facts are in [references/context.md](references/context.md). Read the sectio
 - **Never invent Zevero facts.** If a price, customer name, metric, certification or capability isn't in the file, say it's unknown and ask the user. Don't fill the gap with a plausible guess. Items marked `TODO` are gaps, not facts.
 - **Check permission before naming customers.** Only cite customers listed as citable. For anyone else, describe them by sector and size.
 - **Follow the market's rules.** Use UK English for UK prospects. For Japan, also load `en-ja-translator` and follow its terminology.
-- **De-tell everything that goes out.** Run every draft someone will send or publish through `ai-tells` and show only the cleaned version.
+- **De-tell everything you write.** Run every draft through `ai-tells` and show only the cleaned version. That includes internal docs, decks, agendas, briefs and plans, not just what goes to customers.
 - **Use the brand for anything visual.** Decks, PDFs and one-pagers go through `zevero-brand` or `zevero-presentation`.
 
 ## Keeping it current
