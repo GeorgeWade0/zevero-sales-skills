@@ -117,7 +117,8 @@ def main():
             "source": "./",
             "strict": False,
             "skills": [f"./skills/{k}" for k in keys],
-            "hooks": "./hooks/hooks.json",
+            # No "hooks" key: with source "./", hooks/hooks.json is loaded automatically.
+            # A file-path "hooks" value in a marketplace entry fails to load in Claude Code.
         }
 
     plugins = [entry(k["name"], k["displayName"], k["description"], kits["core"] + k["skills"]) for k in kits["kits"]]

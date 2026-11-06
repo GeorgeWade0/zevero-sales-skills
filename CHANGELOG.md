@@ -5,6 +5,7 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 ## Unreleased
 
 - [zevero-sales-context] Briink can now be proposed to customers; AI drafting of disclosure reports is still off-limits (@GeorgeWade0)
+- Fix: kits failed to load in Claude Code ("hooks: the file-path and array forms are not yet supported in a marketplace entry"). Marketplace entries no longer set `hooks`; `hooks/hooks.json` is picked up automatically (@GeorgeWade0)
 - Role kits published to the Zevero Claude org library: reps install with one click, no GitHub needed (@GeorgeWade0)
 - [request-skill] Sends the request to George on Slack when the rep has no GitHub access (@GeorgeWade0)
 
