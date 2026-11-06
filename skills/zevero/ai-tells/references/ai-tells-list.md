@@ -115,6 +115,10 @@ Sentences whose subject is an abstract noun (compliance, enforcement, ambition, 
 - **The test:** can you picture the subject doing the verb? If not, give the sentence a concrete subject (families, the state, the tax authority) and a literal verb, or delete it, because an epigram at the end of a paragraph is usually a restatement.
 - **Staged-transition variant:** **"Germany answers it" / "France runs the opposite design"**, a country, case or object personified as making a rhetorical move, used as a paragraph opener. Same family, worse consequence: it stages the point without stating it, so the reader cannot scan the paragraph and learn what the case shows. The opposite design of what? Answering what? Fix by opening the paragraph with the conclusion in plain words: "Germany shows the same outcome in a famously rule-following culture"; "France shows that when the state pays families to declare, they declare."
 
+## Consultant labels
+
+- **Catchy strategy labels used as headings or item names**: "grow the base", "keep what we have", "plays", "bets", "new logos", "anchor customer cascade", "vertical engine", "year on a page", "lead indicators", "gates", "maintenance mode". They sound like a strategy deck and say nothing on their own. Name the thing by what it literally is: "Sell more to existing customers", "Sell to the suppliers of our large customers", "What we track each month".
+
 ## Faux-insight and coaching closers
 
 A cluster of short, knowing appraisal-phrases that perform insight or hand out coaching instead of saying the thing. Avoid all:

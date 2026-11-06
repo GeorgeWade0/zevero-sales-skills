@@ -30,7 +30,7 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
    Never mention Briink or AI drafting of disclosure reports to customers. (N: Ask Zevero Resources; N: Platform Manual)
 5. **Security answers:** send customers to the Trust Centre (trust.zevero.earth). For RFPs, use only approved answers from the Technical Sales FAQ (EN/JP). Check certification status live in Vanta. Never answer from memory. (N: Technical Sales FAQ)
 6. **Deal desk / custom scope:** there's no written process yet, so ask George.
-7. **Run every outgoing draft through `ai-tells`.**
+7. **Run every draft through `ai-tells`, internal docs and decks included.**
 
 ## 1. Company and product
 

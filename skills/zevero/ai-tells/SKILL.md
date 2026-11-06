@@ -8,8 +8,9 @@ description: >-
   this before I send it", or invokes /ai-tells by name, on any draft (email,
   LinkedIn post, doc, message, proposal, web copy). Also use when the user has
   just asked for human-sounding prose and is about to send or publish it. In the
-  Zevero sales plugin it also runs automatically on every customer-facing draft
-  (emails, LinkedIn, proposals, decks, one-pagers) before it is shown. Not for translation, tone rewrites into a new voice, or grammar
+  Zevero sales plugin it also runs automatically on every draft, customer-facing or
+  internal (emails, LinkedIn, proposals, decks, docs, agendas, briefs,
+  one-pagers) before it is shown. Not for translation, tone rewrites into a new voice, or grammar
   fixes; this specifically targets the tics that read as AI.
 ---
 

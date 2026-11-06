@@ -89,6 +89,15 @@ Zevero uses two main slide modes plus dividers:
 - Right side: Section title in white, large (40-56pt)
 - Optional section number in Clear Sky Blue `B1E5F2`
 
+### Keep the deck short
+
+Every slide must help the room decide or act. Before building, cut:
+- Agenda, section-divider and header slides that only announce what comes next.
+- Slides that repeat a point made elsewhere. Move supporting detail to speaker notes or one backup slide.
+- Labels and headers on top of an obvious title (a slide about Japan is titled "Japan", nothing more).
+
+For planning and workshop decks, use one slide per region or topic covering what we sell, the blockers, what we need (hires, budget) and the decision needed. Close with one slide of agreed actions and open questions. If a deck goes past about 8 slides, say why each extra slide is needed or cut it.
+
 ### Layout Patterns
 
 For detailed layout specifications with exact coordinates and dimensions, read `references/brand-spec.md`.
@@ -147,6 +156,7 @@ These are brand violations:
 - Multiple typefaces
 - Accent lines under titles (hallmark of AI-generated slides)
 - Overloading slides with text
+- Slides that do nothing: agenda, divider or header slides with no content the room needs
 - Generic stock photography descriptions
 
 ### Arrow Bullets
@@ -163,7 +173,7 @@ For numbered lists on light slides:
 
 ## Build Process
 
-1. Plan all slides with the user (types, content, order)
+1. Plan all slides with the user (types, content, order), using the fewest slides that cover the goal (see "Keep the deck short")
 2. Generate the PptxGenJS script applying all brand rules above
 3. For each slide, determine dark/light mode based on its purpose
 4. Apply the correct layout pattern from the reference
