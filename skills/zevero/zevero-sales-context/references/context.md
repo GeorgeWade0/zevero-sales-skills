@@ -1,6 +1,6 @@
 # Zevero sales context
 
-Last reviewed: 2026-11-05 · Owner: George Wade (CCO) · Next review: 2027-02
+Last reviewed: 2026-11-09 · Owner: George Wade (CCO) · Next review: 2027-02
 
 Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call notes. Every fact has a source tag:
 - **N** = Notion
@@ -26,6 +26,8 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
    - Japan Energy Conservation Law report
    - Full LCA
    - FLAG methodology
+   - Business Central integration and a supplier engagement portal (targeted end 2026 / Q1 2027) (G)
+   - Qualitative / scoring module for ESG disclosures (in development for 2027) (G)
 
    Never mention Briink or AI drafting of disclosure reports to customers. (N: Ask Zevero Resources; N: Platform Manual)
 5. **Security answers:** send customers to the Trust Centre (trust.zevero.earth). For RFPs, use only approved answers from the Technical Sales FAQ (EN/JP). Check certification status live in Vanta. Never answer from memory. (N: Technical Sales FAQ)
@@ -69,7 +71,7 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
 
 | Market | Who | Size | Sectors |
 |---|---|---|---|
-| UK / EU (core) | Mid-sized manufactured goods and FMCG / food and beverage with complex supply chains, early in Scope 3 maturity | ⚠️ 20–500 employees, sweet spot 50–250, £2M–£200M revenue (N: ICP & Qualification, Mar 2026) | Food and drink, brewing (the stronghold), hospitality, retail brands, manufacturing, building materials, construction, professional services |
+| UK / EU (core) | Mid-sized manufactured goods and FMCG / food and beverage with complex supply chains, early in Scope 3 maturity | ⚠️ 20–500 employees, sweet spot 50–250, £2M–£200M revenue (N: ICP & Qualification, Mar 2026) | Food and drink, brewing (the stronghold), hospitality, retail brands, manufacturing, building materials, construction, professional services. Healthcare is a growing focus (G, Nov 2026) |
 | Japan | Mid-to-large corporates | 200+ employees | Manufacturing, food and drink, brewing, FMCG, packaging and printing, supply-chain-heavy |
 | APAC / Singapore | SGX-listed companies and regional HQs | 50+ employees | Healthcare, manufacturing and chemicals, professional services |
 
@@ -83,7 +85,9 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
 - Management Consulting 10
 
 **Buying triggers:**
-1. Customer, retailer or tender sustainability requests. This is the clearest trigger on calls. (G)
+1. Customer, retailer or tender sustainability requests. This is the clearest trigger on calls. (G) Current examples:
+   - Large CPG buyers asking packaging and component suppliers for product carbon footprints (G, Nov 2026)
+   - NHS tender carbon requirements for clinical and healthcare suppliers (G, Nov 2026)
 2. Replacing a weak or expiring incumbent.
 3. B Corp certification or recertification, or an SBTi commitment.
 4. Setting a baseline for targets.
@@ -140,6 +144,7 @@ QHSE and Compliance managers are showing up in more deals. (N: Positioning)
 | Spreadsheets / DIY | No rebuilding every year. Continuous tracking instead of a snapshot. An auditable system of record. |
 | Consultancies | A one-off footprint is a snapshot; Zevero tracks progress year-round. Compare the cost with a retainer or a hire. You own your data. |
 | Software-only tools | Scope 3 at every tier (others gate it). Target setting from the entry tier (Greenly locks reduction trajectories to its top plan). Named experts behind the numbers. |
+| Annual-report providers (e.g. Planet Mark) | Drill-down by site, office, division and category, not a top-line number once a year. Data owners upload their own data. (G, Nov 2026) |
 
 ⚠️ **Expert access by tier is unconfirmed.** One source says experts are standard; others say 1x/2x/4x expert touchpoints a year by tier, with a dedicated expert only at Premium. Don't claim "dedicated expert" below Premium until this is confirmed.
 
@@ -155,7 +160,7 @@ Source: N: Competitor Battle Cards v2, March 2026. Greenly bought Normative in S
 | **Coolset** (EU) | Platform plus researchers, mid-market, CSRD-led | Too early to tell | "Who signs off on the methodology when it's questioned?" |
 | **Plan A / Diginex** | Acquired Dec 2025, 1,500+ clients | Migration opportunity | "Who owns your carbon strategy at the new entity?" |
 | **Seedling** (UK) | Software plus 1:1 support for SMEs and B Corp | Mostly winning; lost to a £4k bundle | Under £5k and B Corp only means qualify out |
-| **Planet Mark** (UK) | Certification programme | Too early to tell | "Planet Mark proves you care. Zevero proves your numbers." |
+| **Planet Mark** (UK) | Certification programme. Strong hold on law firms, especially larger ones (G, Nov 2026) | Too early to tell. Incumbent customers complain of top-line-only annual reports with no site or category drill-down (G) | "Planet Mark proves you care. Zevero proves your numbers." |
 | **Watershed, Sweep, Persefoni** | Enterprise | Rarely met | "Is a £40k+/yr enterprise rollout your situation?" |
 | **Altruistiq** | Enterprise PCF and supply chain | Rarely met | Clarify whether they need product footprints or a corporate footprint |
 | **Zeroboard** (Japan) | Default domestic compliance platform | Losing, often before the first meeting | "Is it built for SSBJ board governance and EU supply-chain mandates?" |
@@ -170,7 +175,7 @@ Source: N: Competitor Battle Cards v2, March 2026. Greenly bought Normative in S
 - CarbonGPT
 - NTT Data (Japan)
 - Foodsteps / Mondra
-- Carbon Responsible
+- Carbon Responsible (won a UK sports venue on direct venue experience, Nov 2026) (HS)
 - Incumbent consultants and auditors
 - In-house builds
 
@@ -227,7 +232,7 @@ Stroud Brewery (26% lower emissions per £, 8% lower per litre since FY22) can o
 
 | Market | What applies | How to use it |
 |---|---|---|
-| UK | SECR, UK SRS, B Corp, SBTi, ISO 14064-1, GHG Protocol, CBAM for exporters, ECGT | B Corp, customer requests and CBAM are the live urgency hooks |
+| UK | SECR, ESOS, UK SRS, B Corp, SBTi, ISO 14064-1, GHG Protocol, CBAM for exporters, ECGT, NHS supplier carbon requirements (G) | B Corp, customer requests and CBAM are the live urgency hooks |
 | EU | CSRD, CBAM (definitive phase from 1 Jan 2026) | **Don't lead with CSRD for mid-market.** Omnibus narrowed it to 1,000+ employees. Lead with supply-chain requests. |
 | Japan | SSBJ, TCFD, GX League / GX ETS, CDP | SSBJ applies to TSE Prime: ≥¥3T market cap from FY ending Mar 2027, others phased to FY ending Mar 2029. Big4 auditors already own SSBJ process work at large caps, so the cleaner angle is streamlining the integrated report. No customer uses SSBJ yet. |
 | APAC | SGX climate reporting, MAS ESG guidelines, Singapore Green Plan 2030, ISSB | SGX-listed companies need defensible data |
@@ -271,6 +276,7 @@ Deal skills (`meddpicc-scorecard`, `deal-review`, `discovery-call`, `call-summar
 
 - Exit criteria are strict. Only Proposal Sent and later count in the forecast.
 - Japan and APAC use their own stage names with the same discipline.
+- The "Revisit Later" stage was retired on 6 Nov 2026. Parked deals were closed lost as "Timing – revisit later", so loss counts for that week are inflated. Exclude them from win-rate and loss analysis. (HS)
 
 **Demos:** end on a reduction scenario, not a dashboard. (D: Positioning Strategy)
 
@@ -287,14 +293,16 @@ Deal skills (`meddpicc-scorecard`, `deal-review`, `discovery-call`, `call-summar
    - Audit log
    - Automated integrations
    - FLAG
-6. **Japan:** they chose Asuene, Zeroboard or NTT Data.
+6. A competitor with direct experience in the prospect's sector (e.g. sports venues). Lead with sectors where we have proof: manufacturing, food and beverage, healthcare. (HS; G, Nov 2026)
+7. **Japan:** they chose Asuene, Zeroboard or NTT Data. EPD deals with small concrete firms are also lost when the owner balks at paying upfront, or over Zevero's limited track record in Japan. (HS, Nov 2026)
 
 **Most common objections on calls:** timing, data readiness, budget/ROI, internal capacity, incumbent. (G)
 
 ## 10. Japan
 
 - **Owners:** Yoshio, Kazuki and Shun run the JP pipeline. Japan has its own stage definitions.
-- **DNP partnership:** warm introductions via DNP carry far more weight. Mention it in demos when relevant.
+- **DNP partnership:** warm introductions via DNP carry far more weight. ⚠️ The partnership was on hold as of Nov 2026 (G). Check its status before mentioning it.
+- **Budget timing:** Japanese corporates set FY budgets (April–March) in Q4, so Q4 is when platform deals get funded. (G, Nov 2026)
 - **Link & Motivation partnership:** a route to integrated-report clients.
 - **Tone:** formal and patient, with no urgency framing. Proposals must be thorough, not one-pagers. Expect follow-up questions by email.
 - **Emphasis:** risk mitigation, enterprise rigour, continuity of named experts.
