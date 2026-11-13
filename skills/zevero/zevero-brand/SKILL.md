@@ -220,3 +220,15 @@ Use for: separating sections within a presentation.
 ### Web Components / Artifacts
 - Read `/mnt/skills/public/frontend-design/SKILL.md` for elevated design quality
 - Apply brand tokens; do not substitute with generic Tailwind blues or greys
+
+---
+
+## Check It Before You Show It
+
+Pages, dashboards and slides have been sent back because charts looked broken, the layout was wonky or the design felt like a first draft. Before showing any visual output:
+
+1. Render it (screenshot the page, or render the slides) at desktop and phone width and look at the result, not the code.
+2. Check every chart: axes and labels readable, no overlapping or clipped text, bars and lines drawn with real data, no empty or NaN panels, legends match colours.
+3. Check the layout: consistent spacing on the 8px grid, aligned columns, no orphaned headings, nothing overflowing its card.
+4. Ask whether it looks designed, not just correct: one clear focal point per screen or slide, a strong headline, brand colours used with restraint. If it reads like a data dump, redesign before showing.
+5. Fix what you find, then show it and say in one line what you checked.
