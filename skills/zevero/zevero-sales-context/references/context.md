@@ -1,6 +1,6 @@
 # Zevero sales context
 
-Last reviewed: 2026-11-05 · Owner: George Wade (CCO) · Next review: 2027-02
+Last reviewed: 2026-11-16 · Owner: George Wade (CCO) · Next review: 2027-02
 
 Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call notes. Every fact has a source tag:
 - **N** = Notion
@@ -21,11 +21,12 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
 3. **Customer names:** cite only customers in the [Can cite](#proof) list. For anyone else, describe them by sector and size.
 4. **Don't promise unreleased features:**
    - Custom roles
-   - Electricity/fuels Excel upload
    - Global commute method selection
    - Japan Energy Conservation Law report
    - Full LCA
    - FLAG methodology
+   - In-platform supplier engagement (sending data requests to suppliers). It was in UAT on 12 Nov 2026. Show the Suppliers page instead until it's live. (G)
+   - Off-platform emissions upload and facility settings by date (announced as coming soon on 13 Nov 2026) (G)
 
    Never mention Briink or AI drafting of disclosure reports to customers. (N: Ask Zevero Resources; N: Platform Manual)
 5. **Security answers:** send customers to the Trust Centre (trust.zevero.earth). For RFPs, use only approved answers from the Technical Sales FAQ (EN/JP). Check certification status live in Vanta. Never answer from memory. (N: Technical Sales FAQ)
@@ -59,6 +60,9 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
 - ISO 14064-1 report
 - Disclosure reports for B Corp, GRI, SGX and SSBJ
 - Emission Engine with semantic factor matching
+- Suppliers page: every supplier ranked by emissions, a detail page per supplier with the emission factor used, and grouping of duplicate supplier names. Released 12 Nov 2026. (N: Release Notes)
+- Excel bulk upload for fuels and electricity (EN/JP template). Released 12 Nov 2026. (N: Release Notes)
+- Historical data spread month by month, so partial-period date ranges report correctly. Released 12 Nov 2026. (N: Release Notes)
 - NetSuite and Unleashed ERP integrations. These win deals with prospects already on those systems. (N: Marketing Strategy)
 
 **Company facts:** pre-Series A, $14M raised, about 50 people, 400% YoY revenue growth, 20+ countries. Acquired Inhabit (sustainability advisory). Zevero Ltd (UK) is owned by Zevero Pte. Ltd. (Singapore). (N: Marketing Strategy 2026; N: Company Information) ⚠️ Check with marketing before using any of these externally.
@@ -90,8 +94,9 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
 5. Moving from one-off reporting to ongoing management.
 6. A new sustainability hire.
 7. Investor ESG pressure.
-8. Regulation: SECR, CBAM for exporters, CSRD preparation.
-9. **Japan:**
+8. Rankings: business schools gain FT ranking points for measuring Scope 1–3. (G)
+9. Regulation: SECR, CBAM for exporters, CSRD preparation.
+10. **Japan:**
    - TCFD
    - GX League
    - Scope 3 pressure from a parent company or anchor customer
@@ -151,11 +156,11 @@ Source: N: Competitor Battle Cards v2, March 2026. Greenly bought Normative in S
 
 | Competitor | Positioning | Our record | Landmine question |
 |---|---|---|---|
-| **Greenly** (UK/EU) | High automation, SME to mid-market, 3,500+ clients | Losing on dashboards, in-platform LCA, employee engagement | "When your numbers are challenged, who is accountable, not just available?" |
+| **Greenly** (UK/EU) | High automation, SME to mid-market, 3,500+ clients | Losing on dashboards, in-platform LCA, employee engagement. Prospects in Nov 2026 called its price prohibitive and its Business Central link spend-based only (G) | "When your numbers are challenged, who is accountable, not just available?" |
 | **Coolset** (EU) | Platform plus researchers, mid-market, CSRD-led | Too early to tell | "Who signs off on the methodology when it's questioned?" |
 | **Plan A / Diginex** | Acquired Dec 2025, 1,500+ clients | Migration opportunity | "Who owns your carbon strategy at the new entity?" |
-| **Seedling** (UK) | Software plus 1:1 support for SMEs and B Corp | Mostly winning; lost to a £4k bundle | Under £5k and B Corp only means qualify out |
-| **Planet Mark** (UK) | Certification programme | Too early to tell | "Planet Mark proves you care. Zevero proves your numbers." |
+| **Seedling** (UK) | Software plus 1:1 support for SMEs and B Corp | Mostly winning; lost to a £4k bundle. Its customers describe turnover-based Scope 3 estimates with no visibility into the method, and note it also sells offsets (G) | Under £5k and B Corp only means qualify out |
+| **Planet Mark** (UK) | Certification programme | Too early to tell. Prospects replacing it say its "verified" stamp was what sold their board, so show the signed-off annual report and ISO 14064-1 audit-ready output (G) | "Planet Mark proves you care. Zevero proves your numbers." |
 | **Watershed, Sweep, Persefoni** | Enterprise | Rarely met | "Is a £40k+/yr enterprise rollout your situation?" |
 | **Altruistiq** | Enterprise PCF and supply chain | Rarely met | Clarify whether they need product footprints or a corporate footprint |
 | **Zeroboard** (Japan) | Default domestic compliance platform | Losing, often before the first meeting | "Is it built for SSBJ board governance and EU supply-chain mandates?" |
@@ -179,6 +184,8 @@ Source: N: Competitor Battle Cards v2, March 2026. Greenly bought Normative in S
 - **Tiers:** Essential / Leading / Premium, on annual contracts. ⚠️ The names were under review in March 2026.
 - **Terms:** 1-year minimum, with quarterly business reviews built in. Upgrade any time; downgrade at renewal. (D: Pricing FAQ, June 2026)
 - **Onboarding:** ⚠️ unconfirmed. The Pricing FAQ says it's included; the Sales Process Guide says it's charged.
+- **Users:** no per-user charge; reps confirmed unlimited users on demos. (G)
+- ⚠️ **Pricing basis:** reps on calls describe pricing as based on employee headcount, not revenue or sites. Unconfirmed in a written source. (G)
 - **Renewals:** 5% standard uplift. Ownership splits at £10k/yr. (N: Renewals process)
 - **Typical deal sizes** for judgement only (HS, closed-won since Jan 2025, in USD):
 
@@ -279,17 +286,21 @@ Deal skills (`meddpicc-scorecard`, `deal-review`, `discovery-call`, `call-summar
 2. Timing / no need yet
 3. Budget, or a £1–4k alternative
 4. They stay with an incumbent consultant, tool or in-house build
-5. Feature gaps:
+5. Feature gaps (internal estimate for 2026: about $800k lost, roughly $300k on price and the rest on product gaps) (G: 2027 GTM – UK, 12 Nov 2026):
+   - **Supplier engagement.** Now treated as a minimum requirement, asked for in deals from about $4k upward, and the most common product objection in Nov 2026. (G)
    - In-platform LCA
    - Flexible dashboards
-   - Bulk upload
+   - Bulk upload (fuels and electricity Excel upload released 12 Nov 2026)
    - Approval workflow
    - Audit log
-   - Automated integrations
+   - Automated integrations (a Business Central / Dynamics API was called a deal-breaker in Nov 2026) (G)
    - FLAG
+   - Business divisions and user permissions cost deals earlier in 2026; most of these are now resolved. (G)
 6. **Japan:** they chose Asuene, Zeroboard or NTT Data.
 
-**Most common objections on calls:** timing, data readiness, budget/ROI, internal capacity, incumbent. (G)
+**Most common objections on calls:** timing, data readiness, budget/ROI, internal capacity, incumbent, and "you don't do supplier engagement". (G)
+
+For supplier engagement: show the Suppliers page in the demo (who your biggest emitters are, by product and factor), then explain how the expert team runs supplier data collection. Don't promise in-platform supplier data requests until they're live. (N: Release Notes; G)
 
 ## 10. Japan
 
@@ -355,4 +366,5 @@ These are waiting on George. Until they're resolved, skills must hedge or ask in
 - Japan Frameworks – State of Play: https://app.notion.com/p/34b47725133b80ceb804fb77a0957557
 - Pricing FAQ: https://docs.google.com/document/d/1dzH4QjNKTWaX6R5Cy71V94m4rniMs1n0hGr2FJ0GJ2A
 - Case Study Roadmap: https://app.notion.com/p/b79eceb63fb149348dd122b735a50d1d
+- Platform Release Notes: https://app.notion.com/p/21c47725133b80f8a778e2539d8a0c2d
 - Trust Centre: https://trust.zevero.earth/
