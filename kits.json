@@ -52,7 +52,7 @@
         "commercial-pulse", "pipeline-review", "team-pipeline", "forecast", "forecast-call",
         "rep-context", "deal-red-flags", "sales-call-review", "win-loss-review",
         "sales-pipeline-coverage-modeling", "deal-slip-scenario", "deal-desk", "discount-exception",
-        "crm-hygiene-check", "weekly-contact-enrichment", "rep-ramp"
+        "crm-hygiene-check", "weekly-contact-enrichment", "hubspot-contact-name-cleanup", "rep-ramp"
       ]
     }
   ],

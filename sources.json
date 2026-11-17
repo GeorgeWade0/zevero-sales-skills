@@ -13,6 +13,7 @@
         "discovery-brief",
         "en-ja-translator",
         "hubspot-contact-enrichment",
+        "hubspot-contact-name-cleanup",
         "hubspot-post-meeting-update",
         "rep-ramp",
         "request-skill",
