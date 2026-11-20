@@ -4,6 +4,8 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## Unreleased
 
+- [en-ja-translator] Learned from feedback: bilingual messages come as one message, full English first then full Japanese, not interleaved (@self-improve)
+- [zevero-brand] Learned from feedback: web pages use the zevero.earth homepage as the template with the real logo file, and keep the sections the user supplied (@self-improve)
 - [hubspot-contact-name-cleanup] New: weekly clean-up that fills missing names, company and job title on contacts the HubSpot Sales extension auto-creates, using the email signatures on the record, and fixes romaji or junk last names (@GeorgeWade0)
 - [hubspot-contact-name-cleanup] Shared inboxes now get a readable name ("環境政策課 ご担当者", "ESG Compliance") instead of showing the email address; placeholder names like "ご担当者" are tidied into that format (@GeorgeWade0)
 - [hubspot-database-review] New: monthly review of all HubSpot contacts that lists removal candidates with reasons in a Google Sheet and recommends the top three fixes (@GeorgeWade0)

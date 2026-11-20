@@ -110,6 +110,7 @@ border-radius: 8px;
 
 - On dark backgrounds: logo in white, optionally inside a pill/badge with a subtle teal border (`border: 1.5px solid #265a62; border-radius: 24px; padding: 8px 16px`)
 - On light backgrounds: logo in Base Green `#004646`
+- Use the real logo file, embedded in the output (inline SVG or base64), never a typed text wordmark. The files are in the Zevero All shared drive under Marketing > Company Branding Kit > Logos. If you can't reach them, ask for the file before building rather than faking it.
 
 ### Cards (light mode)
 
@@ -205,6 +206,10 @@ Use for: separating sections within a presentation.
 - Use CSS custom properties for the colour tokens
 - Default to dark mode for impact pieces, light mode for data/content
 - Use Tailwind sparingly — prefer inline styles or CSS vars for exact brand colours
+
+### Web Pages and Landing Pages
+- Use the live zevero.earth homepage as the template: same header, menu, buttons, hero layout and section patterns, with the real logo. A page that doesn't look like the current website gets sent back.
+- When the user supplies copy or sections, keep them. Add or rework only what they asked for; don't replace their sections with ones you wrote.
 
 ### Presentations (PPTX)
 - Dark slides: `#002321` background, white + yellow headlines

@@ -134,6 +134,12 @@ The highest-frequency traps, worth remembering even before opening the file:
 
 Provide:
 1. The Japanese translation.
+
+**Bilingual messages (Slack posts, team updates, emails to mixed teams):** when the user wants
+the message in both languages, give one message they can paste as it is: the full English
+version first, then the full Japanese version below it. Do not interleave the two line by line
+or section by section, and do not split them into two separate messages.
+
 2. A **Translation Notes** section in English listing:
    - Any cultural adaptations made and why.
    - Any register or style decisions worth noting.
