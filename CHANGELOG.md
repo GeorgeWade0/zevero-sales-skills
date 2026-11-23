@@ -4,6 +4,7 @@ One line per change a rep would notice. Newest first. Format: `- [skill] what ch
 
 ## Unreleased
 
+- [zevero-sales-context] Weekly refresh: unreleased PCF tool, supplier survey and free-format upload added to don't-promise list; EPD/grant buying trigger; Greenly parent-group loss and Planet Mark co-existence notes; incumbents named on calls (Workiva, Deepki, Brownlow Hub, Mondra angle); supplier engagement added as a feature gap; YCH case study marked unpublished (@context-bot)
 - [hubspot-contact-name-cleanup] New: weekly clean-up that fills missing names, company and job title on contacts the HubSpot Sales extension auto-creates, using the email signatures on the record, and fixes romaji or junk last names (@GeorgeWade0)
 - [hubspot-contact-name-cleanup] Shared inboxes now get a readable name ("環境政策課 ご担当者", "ESG Compliance") instead of showing the email address; placeholder names like "ご担当者" are tidied into that format (@GeorgeWade0)
 - [hubspot-database-review] New: monthly review of all HubSpot contacts that lists removal candidates with reasons in a Google Sheet and recommends the top three fixes (@GeorgeWade0)

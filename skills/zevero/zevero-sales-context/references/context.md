@@ -1,6 +1,6 @@
 # Zevero sales context
 
-Last reviewed: 2026-11-05 · Owner: George Wade (CCO) · Next review: 2027-02
+Last reviewed: 2026-11-23 · Owner: George Wade (CCO) · Next review: 2027-02
 
 Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call notes. Every fact has a source tag:
 - **N** = Notion
@@ -26,6 +26,9 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
    - Japan Energy Conservation Law report
    - Full LCA
    - FLAG methodology
+   - In-platform PCF tool (launch planned for 12 Jan 2027; until then PCF is consulting-led) (G, Nov 2026)
+   - In-platform supplier survey (interim: template and checklist workaround) (G, Nov 2026)
+   - Free-format AI upload with no template (in development) (G, Nov 2026)
 
    Never mention Briink or AI drafting of disclosure reports to customers. (N: Ask Zevero Resources; N: Platform Manual)
 5. **Security answers:** send customers to the Trust Centre (trust.zevero.earth). For RFPs, use only approved answers from the Technical Sales FAQ (EN/JP). Check certification status live in Vanta. Never answer from memory. (N: Technical Sales FAQ)
@@ -91,6 +94,7 @@ Facts compiled from Notion, Google Drive, HubSpot aggregates and Granola call no
 6. A new sustainability hire.
 7. Investor ESG pressure.
 8. Regulation: SECR, CBAM for exporters, CSRD preparation.
+   - **EPD (construction and building materials):** pressure from main contractors and Green Mark projects. Grant funding (e.g. Enterprise Singapore EDG) often unlocks the budget, so ask about grants early. (HS: Nov 2026 EPD wins; G)
 9. **Japan:**
    - TCFD
    - GX League
@@ -151,11 +155,11 @@ Source: N: Competitor Battle Cards v2, March 2026. Greenly bought Normative in S
 
 | Competitor | Positioning | Our record | Landmine question |
 |---|---|---|---|
-| **Greenly** (UK/EU) | High automation, SME to mid-market, 3,500+ clients | Losing on dashboards, in-platform LCA, employee engagement | "When your numbers are challenged, who is accountable, not just available?" |
+| **Greenly** (UK/EU) | High automation, SME to mid-market, 3,500+ clients | Losing on dashboards, in-platform LCA, employee engagement. Also lose where a parent group already uses Greenly (HS, Nov 2026) | "When your numbers are challenged, who is accountable, not just available?" |
 | **Coolset** (EU) | Platform plus researchers, mid-market, CSRD-led | Too early to tell | "Who signs off on the methodology when it's questioned?" |
 | **Plan A / Diginex** | Acquired Dec 2025, 1,500+ clients | Migration opportunity | "Who owns your carbon strategy at the new entity?" |
 | **Seedling** (UK) | Software plus 1:1 support for SMEs and B Corp | Mostly winning; lost to a £4k bundle | Under £5k and B Corp only means qualify out |
-| **Planet Mark** (UK) | Certification programme | Too early to tell | "Planet Mark proves you care. Zevero proves your numbers." |
+| **Planet Mark** (UK) | Certification programme | Too early to tell. Customers can be locked in by multi-year contracts and branding; offer EcoVadis or SBTi support alongside instead of replacing (G, Nov 2026) | "Planet Mark proves you care. Zevero proves your numbers." |
 | **Watershed, Sweep, Persefoni** | Enterprise | Rarely met | "Is a £40k+/yr enterprise rollout your situation?" |
 | **Altruistiq** | Enterprise PCF and supply chain | Rarely met | Clarify whether they need product footprints or a corporate footprint |
 | **Zeroboard** (Japan) | Default domestic compliance platform | Losing, often before the first meeting | "Is it built for SSBJ board governance and EU supply-chain mandates?" |
@@ -173,6 +177,12 @@ Source: N: Competitor Battle Cards v2, March 2026. Greenly bought Normative in S
 - Carbon Responsible
 - Incumbent consultants and auditors
 - In-house builds
+
+**Incumbents prospects named on calls** (G, Nov 2026, directional):
+- Workiva (enterprise; seen as too complex by users)
+- Deepki (⚠️ spelling unconfirmed; Scope 1–2 energy focus, weak on Scope 3)
+- Brownlow Hub (energy invoice data)
+- Mondra: a food prospect noted Mondra's own disclaimer that it can't claim full GHG Protocol compliance. Ask: "Can your provider state your footprint is fully GHG Protocol compliant?" ⚠️ Check Mondra's current wording before using it.
 
 ## 6. Pricing and packaging
 
@@ -219,7 +229,7 @@ Canonical source for customers: zevero.earth/customer-stories. (N: Case Study Ro
 | VITHIT | Reduction plan let them meet government tender requirements |
 | Artisan Drinks | Achieved B Corp |
 | DEYA | Carbon labelling on cans |
-| YCH | 50% reduction in Scope 1 and 2 ⚠️ check the case study is live before quoting |
+| YCH | 50% reduction in Scope 1 and 2 ⚠️ case study still in progress, not published (N: Case Study Roadmap, Nov 2026); don't quote yet |
 
 Stroud Brewery (26% lower emissions per £, 8% lower per litre since FY22) can only be quoted once permission is confirmed.
 
@@ -287,6 +297,7 @@ Deal skills (`meddpicc-scorecard`, `deal-review`, `discovery-call`, `call-summar
    - Audit log
    - Automated integrations
    - FLAG
+   - Supplier engagement tooling (raised on several UK calls and in RFPs, Nov 2026) (G)
 6. **Japan:** they chose Asuene, Zeroboard or NTT Data.
 
 **Most common objections on calls:** timing, data readiness, budget/ROI, internal capacity, incumbent. (G)
@@ -338,7 +349,7 @@ These are waiting on George. Until they're resolved, skills must hedge or ask in
 3. Onboarding: included in the subscription or charged separately.
 4. SOC 2 status.
 5. Japan's priority: marketing calls it "future", but it has the most won deals.
-6. Whether the YCH and MOTH case studies are published.
+6. Whether the YCH and MOTH case studies are published. YCH is still in progress (N: Case Study Roadmap, Nov 2026). MOTH has two roadmap entries that disagree (one Done, one Blocked).
 7. Refresh the Greenly and Normative battle cards after the acquisition. booost has no card yet.
 
 ## Sources
